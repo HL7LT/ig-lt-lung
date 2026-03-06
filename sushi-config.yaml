@@ -57,6 +57,8 @@ dependencies:
 pages:
   index.md:
     title: Home
+  workflow.md:
+    title: Workflow
 
 
 parameters:
@@ -91,6 +93,7 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Workflow: workflow.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
