@@ -1,32 +1,25 @@
-Instance: example-patient-male
-InstanceOf: LTBasePatient 
-Usage: #example
-Title: "Example of Patient - Jonas Petrauskas"
-Description: "An example Patient conforming to the Lithuanian Base Profile."
-// Identifiers (Required: 1..* MS)
-* identifier[0].use = #official
-* identifier[0].system = "urn:oid:1.2.3.4.5.6.7.8.9.11" // Lithuanian Personal Code/ID System
-* identifier[0].value = "38501019999" // Example personal code (as a string)
-* identifier[1].use = #usual
-* identifier[1].system = "http://hospital-lt.lt/patient-id"
-* identifier[1].value = "HOSPLT-10005"
-// Name 
-* name[0].use = #official
-* name[0].family = "Petrauskas"
-* name[0].given[0] = "Jonas"
-* name[0].text = "Jonas Petrauskas"
-// Active Status (MS)
-* active = true
-// Gender (MS)
-* gender = #male
-// Birth Date (MS)
-* birthDate = "1985-01-01"
-// Other Patient information
-* telecom[0].system = #phone
-* telecom[0].value = "+370 65551234"
-* telecom[0].use = #mobile
-* address[0].use = #home
-* address[0].line[0] = "Gedimino pr. 10"
-* address[0].city = "Vilnius"
-* address[0].country = "LT"
-* address[0].postalCode = "LT-01103"
+Profile: PatientLt
+Parent: PatientEu
+Id: patient-lt
+Title: "PatientLt"
+Description: "Lithuanian Base Patient profile, used to represent patients administrative information"
+* ^url = $patient-lt-url
+* ^status = #active 
+
+* identifier 1..* MS
+  * extension contains data-absent-reason named data-absent-reason 0..1 MS
+  * system and value MS
+* identifier.system from PatientIdentifierLt (extensible)
+
+* gender MS
+* name MS
+  * use and text and family and given and period MS
+* active MS
+* birthDate MS
+* deceased[x] MS
+* telecom MS
+  * system and value and use MS
+* generalPractitioner only Reference(PractitionerLt or OrganizationLt or PractitionerRoleLt)
+* managingOrganization only Reference(OrganizationLt)
+* link
+  * other only Reference(PatientLt or RelatedPersonLt)
