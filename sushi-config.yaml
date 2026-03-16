@@ -20,9 +20,11 @@ publisher:
   url: https://medicinosnk.lt
   email: info@medicinosnk.lt
 
+# don't change the order of dependencies!
 dependencies:
+  lt.hl7.fhir.base: 0.3.0
+  lt.hl7.fhir.eu: 0.0.2
   hl7.fhir.eu.base-r5: 0.1.0
-  lt.hl7.fhir.base: 0.2.0
 
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
@@ -63,7 +65,18 @@ pages:
 
 parameters:
   special-url-base: https://hl7.lt/fhir
-  special-url: https://tx.hl7.lt/fhir
+  special-url: 
+    - https://tx.hl7.lt/fhir/CodeSystem/lung-rads-category
+    - https://tx.hl7.lt/fhir/CodeSystem/lung-rads-modifier
+    - https://tx.hl7.lt/fhir/CodeSystem/lung-recommendation
+    - https://tx.hl7.lt/fhir/CodeSystem/pulmonary-nodule-type-local
+    - https://tx.hl7.lt/fhir/CodeSystem/pulmonary-nodule-component-code
+    - https://tx.hl7.lt/fhir/ValueSet/lung-rads-category
+    - https://tx.hl7.lt/fhir/ValueSet/lung-rads-modifier
+    - https://tx.hl7.lt/fhir/ValueSet/lung-recommendation
+    - https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-type
+    - https://tx.hl7.lt/fhir/ValueSet/lung-lobe
+    - https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-morphology
 
   excludettl: true
   shownav: true
