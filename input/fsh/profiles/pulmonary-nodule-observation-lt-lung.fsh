@@ -1,7 +1,7 @@
 Profile: PulmonaryNoduleObservationLtLung
 Parent: ObservationLt
 Id: pulmonary-nodule-observation-lt-lung
-Title: "Pulmonary Nodule"
+Title: "Pulmonary Nodule (LT Lung)"
 Description: """
 Pulmonary nodule identified on low-dose chest CT (LDCT) in the Lithuanian
 lung cancer early diagnosis programme.
@@ -28,10 +28,10 @@ morphological features, measurements, and optional note.
 * derivedFrom 0..*
 * value[x] 1..1
 * value[x] only CodeableConcept
-* valueCodeableConcept from PulmonaryNoduleTypeVSLtLung (required)
+* valueCodeableConcept from PulmonaryNoduleTypeVS (required)
 * valueCodeableConcept ^short = "Nodule type"
 * bodySite 1..1
-* bodySite from LungLobeVSLtLung (required)
+* bodySite from LungLobeVS (required)
 * bodySite ^short = "Lung lobe where the nodule is located"
 * note 0..*
 * note ^short = "Optional free-text note about the nodule"
@@ -52,7 +52,7 @@ morphological features, measurements, and optional note.
     solidPartLongAxis 0..1 and
     solidPartShortAxis 0..1 and
     solidPartVolume 0..1
-* component[ctSliceNumber].code = PulmonaryNoduleComponentCodeLtLung#ct-slice-number "CT slice number"
+* component[ctSliceNumber].code = PulmonaryNoduleComponentCode#ct-slice-number "CT slice number"
 * component[ctSliceNumber].value[x] only integer
 * component[ctSliceNumber] ^short = "CT slice number"
 
@@ -64,7 +64,7 @@ morphological features, measurements, and optional note.
 * component[irregularMargins].value[x] only boolean
 * component[irregularMargins] ^short = "Whether the nodule has irregular / microlobulated margins"
 
-* component[pleuralAssociation].code = PulmonaryNoduleComponentCodeLtLung#pleural-association "Associated with pleura"
+* component[pleuralAssociation].code = PulmonaryNoduleComponentCode#pleural-association "Associated with pleura"
 * component[pleuralAssociation].value[x] only boolean
 * component[pleuralAssociation] ^short = "Whether the nodule is associated with pleura"
 

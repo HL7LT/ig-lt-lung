@@ -1,7 +1,7 @@
 Profile: LungRecommendationObservationLtLung
 Parent: ObservationLt
 Id: lung-recommendation-observation-lt-lung
-Title: "Lung Screening Recommendation"
+Title: "Lung Screening Recommendation (LT Lung)"
 Description: """
 Recommendation for follow-up or referral after low-dose chest CT (LDCT)
 screening examination in the Lithuanian lung cancer early diagnosis programme.
@@ -27,7 +27,7 @@ because the source dataset provides programme-specific recommendation options.
 * effective[x] only dateTime
 * value[x] 1..1
 * value[x] only CodeableConcept
-* valueCodeableConcept from LungRecommendationVSLtLung (required)
+* valueCodeableConcept from LungRecommendationVS (required)
 * performer 0..*
 * performer only Reference(PractitionerLt)
 * derivedFrom 0..*

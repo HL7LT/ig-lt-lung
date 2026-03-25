@@ -1,5 +1,5 @@
-CodeSystem: LungRecommendationLtLung
-Id: lung-recommendation-lt-lung
+CodeSystem: LungRecommendation
+Id: lung-recommendation
 Title: "Lung Screening Recommendation Codes"
 Description: """
 Recommendation codes used in the Lithuanian lung cancer early diagnosis
@@ -8,7 +8,7 @@ programme for follow-up and referral actions after LUNG-RADS assessment.
 These codes represent the recommended next clinical action based on the
 radiological conclusion and programme rules.
 """
-* ^url = $lung-recommendation-lt-lung-url
+* ^url = $lung-recommendation-cs-url
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -21,14 +21,14 @@ radiological conclusion and programme rules.
 * #specialist-consult "Refer for consultation to an appropriate specialist"
 
 
-ValueSet: LungRecommendationVSLtLung
-Id: lung-recommendation-vs-lt-lung
+ValueSet: LungRecommendationVS
+Id: lung-recommendation
 Title: "Lung Screening Recommendation Value Set"
 Description: """
 Allowed recommendation codes used in the Lithuanian lung cancer early
 diagnosis programme for follow-up and referral decisions.
 """
-* ^url = $lung-recommendation-vs-lt-lung-url
+* ^url = $lung-recommendation-vs-url
 * ^status = #active
 * ^experimental = false
-* include codes from system LungRecommendationLtLung
+* include codes from system LungRecommendation

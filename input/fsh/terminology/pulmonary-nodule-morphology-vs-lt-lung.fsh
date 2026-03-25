@@ -1,11 +1,11 @@
-ValueSet: PulmonaryNoduleMorphologyVSLtLung
-Id: pulmonary-nodule-morphology-vs-lt-lung
+ValueSet: PulmonaryNoduleMorphologyVS
+Id: pulmonary-nodule-morphology
 Title: "Pulmonary Nodule Morphology"
 Description: """
 Allowed morphology characteristics for pulmonary nodules in the Lithuanian
 lung cancer early diagnosis programme.
 """
-* ^url = $pulmonary-nodule-morphology-vs-lt-lung-url
+* ^url = $pulmonary-nodule-morphology-vs-url
 * ^status = #active
 * ^experimental = false
 * $sct#129742005 "Lesion with spiculated margin"

@@ -1,7 +1,7 @@
 Profile: LungRadsAssessmentLtLung
 Parent: ObservationLt
 Id: lung-rads-assessment-lt-lung
-Title: "LUNG-RADS Assessment"
+Title: "LUNG-RADS Assessment (LT Lung)"
 Description: """
 LUNG-RADS assessment category assigned to a low-dose chest CT (LDCT)
 screening examination in the Lithuanian lung cancer early diagnosis programme.
@@ -29,7 +29,7 @@ The optional S modifier is represented as a component.
 * effective[x] only dateTime
 * value[x] 1..1
 * value[x] only CodeableConcept
-* valueCodeableConcept from LungRadsCategoryVSLtLung (required)
+* valueCodeableConcept from LungRadsCategoryVS (required)
 * performer 0..*
 * performer only Reference(PractitionerLt)
 * derivedFrom 0..*
@@ -40,6 +40,6 @@ The optional S modifier is represented as a component.
 * component.code = $sct#246513007 "Revision value"
 * component.value[x] 1..1
 * component.value[x] only CodeableConcept
-* component.valueCodeableConcept from LungRadsModifierVSLtLung (required)
+* component.valueCodeableConcept from LungRadsModifierVS (required)
 * component ^short = "Optional LUNG-RADS modifier, e.g. S"
 * note 0..*

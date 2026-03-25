@@ -1,5 +1,5 @@
-CodeSystem: LungRadsCategoryLtLung
-Id: lung-rads-category-lt-lung
+CodeSystem: LungRadsCategory
+Id: lung-rads-category
 Title: "LUNG-RADS Assessment Categories"
 Description: """
 Main LUNG-RADS assessment categories used in the Lithuanian lung cancer
@@ -8,7 +8,7 @@ early diagnosis programme.
 These codes represent the primary final assessment category assigned
 to the low-dose chest CT screening examination.
 """
-* ^url = $lung-rads-category-lt-lung-url
+* ^url = $lung-rads-category-cs-url
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -21,14 +21,14 @@ to the low-dose chest CT screening examination.
 * #4X "Category 4X – Extremely suspicious"
 
 
-ValueSet: LungRadsCategoryVSLtLung
-Id: lung-rads-category-vs-lt-lung
+ValueSet: LungRadsCategoryVS
+Id: lung-rads-category
 Title: "LUNG-RADS Assessment Category"
 Description: """
 Allowed primary LUNG-RADS assessment categories used in the Lithuanian
 lung cancer early diagnosis programme.
 """
-* ^url = $lung-rads-category-vs-lt-lung-url
+* ^url = $lung-rads-category-vs-url
 * ^status = #active
 * ^experimental = false
-* include codes from system LungRadsCategoryLtLung
+* include codes from system LungRadsCategory

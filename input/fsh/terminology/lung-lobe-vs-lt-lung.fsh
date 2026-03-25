@@ -1,11 +1,11 @@
-ValueSet: LungLobeVSLtLung
-Id: lung-lobe-vs-lt-lung
+ValueSet: LungLobeVS
+Id: lung-lobe
 Title: "Lung Lobe"
 Description: """
 Allowed lung lobe body structure codes for localisation of pulmonary nodules
 in the Lithuanian lung cancer early diagnosis programme.
 """
-* ^url = $lung-lobe-vs-lt-lung-url
+* ^url = $lung-lobe-vs-url
 * ^status = #active
 * ^experimental = false
 * $sct#42400003 "Structure of upper lobe of right lung"

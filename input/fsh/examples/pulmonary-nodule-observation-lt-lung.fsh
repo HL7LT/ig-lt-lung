@@ -31,7 +31,7 @@ Description: "Example of a part-solid pulmonary nodule in the left upper lobe wi
 * subject = Reference(example-patient-male)
 * performer = Reference(example-practitioner)
 * effectiveDateTime = "2025-09-22T10:25:00Z"
-* valueCodeableConcept = PulmonaryNoduleTypeLocalLtLung#part-solid "Part-solid"
+* valueCodeableConcept = PulmonaryNoduleTypeLocal#part-solid "Part-solid"
 * bodySite = $sct#44714003 "Structure of upper lobe of left lung"
 * component[ctSliceNumber].valueInteger = 102
 * component[spiculation].valueBoolean = false

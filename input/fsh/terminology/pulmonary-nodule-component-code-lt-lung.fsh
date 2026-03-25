@@ -1,12 +1,12 @@
-CodeSystem: PulmonaryNoduleComponentCodeLtLung
-Id: pulmonary-nodule-component-code-lt-lung
+CodeSystem: PulmonaryNoduleComponentCode
+Id: pulmonary-nodule-component-code
 Title: "Pulmonary Nodule Observation Component Codes"
 Description: """
 Local component codes for pulmonary nodule observation elements used in the
 Lithuanian lung cancer early diagnosis programme when no suitable SNOMED CT
 code is available in the source dataset.
 """
-* ^url = $pulmonary-nodule-component-code-lt-lung-url
+* ^url = $pulmonary-nodule-component-code-cs-url
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
