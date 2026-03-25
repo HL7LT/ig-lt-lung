@@ -37,7 +37,7 @@ This questionnaire captures information such as:
 
 These data provide contextual information for radiological interpretation but **do not represent diagnostic conclusions**.
 
-In the FHIR model, these elements are typically represented as structured **Observation** resources linked to the screening encounter.
+In the FHIR model, these elements are typically represented as structured **Observation** resources linked to the screening encounter. The pre-examination data is captured using the [Pre-LDCT Questionnaire](Questionnaire-questionnaire-pre-ldct-lt-lung.html), which maps to profiles from the [Vital Signs IG](https://build.fhir.org/ig/HL7LT/ig-lt-vitalsigns/) (height, weight) and [Lifestyle IG](https://build.fhir.org/ig/HL7LT/ig-lt-lifestyle/) (smoking status, tobacco consumption, pack-years).
 
 ## LDCT imaging acquisition
 
@@ -91,7 +91,7 @@ Individual findings are represented as structured **Observation** resources desc
 - size or volume,
 - evolution compared to previous examinations.
 
-The interpretation results are compiled into a structured **diagnostic imaging report**, represented as a **DiagnosticReport** resource that summarises the findings and provides the clinical interpretation.
+The interpretation results are compiled into a structured **diagnostic imaging report**, represented as a [LungReportLtLung](StructureDefinition-lung-report-lt-lung.html) (DiagnosticReport) resource that wraps a [LungCompositionLtLung](StructureDefinition-lung-composition-lt-lung.html) (Composition) and aggregates all structured findings. Individual nodule findings are captured using the [PulmonaryNoduleObservationLtLung](StructureDefinition-pulmonary-nodule-observation-lt-lung.html) profile, while significant incidental findings are documented using the [IncidentalFindingLtLung](StructureDefinition-incidental-finding-lt-lung.html) profile. The LDCT report data is captured in the [LDCT Questionnaire](Questionnaire-questionnaire-ldct-lt-lung.html).
 
 ## Risk stratification and LUNG-RADS assessment
 
@@ -105,7 +105,7 @@ Typical outcomes include:
 - **Category 3** → probably benign findings, short-interval follow-up imaging,
 - **Category 4** → suspicious findings requiring additional diagnostic evaluation or referral.
 
-In the FHIR model, the LUNG-RADS category is represented as a structured **Observation**, while the resulting recommendation may be expressed as a **ServiceRequest** for follow-up imaging or specialist consultation.
+In the FHIR model, the LUNG-RADS category is represented as a [LungRadsAssessmentLtLung](StructureDefinition-lung-rads-assessment-lt-lung.html) Observation, while the resulting recommendation is expressed as a [LungRecommendationObservationLtLung](StructureDefinition-lung-recommendation-observation-lt-lung.html) Observation linked to the assessment.
 
 ## Follow-up and continuity of care
 

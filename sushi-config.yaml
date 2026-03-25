@@ -22,7 +22,10 @@ publisher:
 
 # don't change the order of dependencies!
 dependencies:
-  lt.hl7.fhir.base: 0.3.0
+  lt.hl7.fhir.base: current
+  lt.hl7.fhir.lifestyle: current
+  lt.hl7.fhir.vitalsigns: current
+  lt.hl7.fhir.lab: current
   lt.hl7.fhir.eu: 0.0.2
   hl7.fhir.eu.base-r5: 0.1.0
 
@@ -61,6 +64,14 @@ pages:
     title: Home
   workflow.md:
     title: Workflow
+  profiles.md:
+    title: Profiles
+  terminology.md:
+    title: Terminology
+  examples.md:
+    title: Examples
+  questionnaires.md:
+    title: Questionnaires
 
 
 parameters:
@@ -77,6 +88,8 @@ parameters:
     - https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-type
     - https://tx.hl7.lt/fhir/ValueSet/lung-lobe
     - https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-morphology
+    - https://tx.hl7.lt/fhir/ValueSet/incidental-finding
+    - https://tx.hl7.lt/fhir/CodeSystem/lung-questionnaire-options
 
   excludettl: true
   shownav: true
@@ -107,6 +120,10 @@ parameters:
 menu:
   Home: index.html
   Workflow: workflow.html
+  Profiles: profiles.html
+  Terminology: terminology.html
+  Examples: examples.html
+  Questionnaires: questionnaires.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

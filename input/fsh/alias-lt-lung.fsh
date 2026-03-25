@@ -6,6 +6,9 @@
 Alias: $lung-rads-assessment-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/lung-rads-assessment-lt-lung
 Alias: $lung-recommendation-observation-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/lung-recommendation-observation-lt-lung
 Alias: $pulmonary-nodule-observation-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/pulmonary-nodule-observation-lt-lung
+Alias: $lung-report-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/lung-report-lt-lung
+Alias: $lung-composition-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/lung-composition-lt-lung
+Alias: $incidental-finding-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/incidental-finding-lt-lung
 
 // === Terminology - CodeSystems ===
 // Terminology URLs omit the -lt-lung suffix in the path
@@ -22,3 +25,5 @@ Alias: $lung-recommendation-vs-lt-lung-url = https://tx.hl7.lt/fhir/ValueSet/lun
 Alias: $pulmonary-nodule-type-vs-lt-lung-url = https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-type
 Alias: $lung-lobe-vs-lt-lung-url = https://tx.hl7.lt/fhir/ValueSet/lung-lobe
 Alias: $pulmonary-nodule-morphology-vs-lt-lung-url = https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-morphology
+Alias: $incidental-finding-vs-url = https://tx.hl7.lt/fhir/ValueSet/incidental-finding
+Alias: $lung-questionnaire-options-cs-url = https://tx.hl7.lt/fhir/CodeSystem/lung-questionnaire-options
