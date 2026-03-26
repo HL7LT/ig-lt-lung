@@ -41,7 +41,10 @@ Description: "Significant incidental finding detected during low-dose chest comp
 * component contains
     severity 0..1 and
     laterality 0..1 and
-    size 0..1
+    size 0..1 and
+    density 0..1 and
+    multiplicity 0..1 and
+    lymphNodeLocation 0..*
 
 * component[severity].code = $sct#246112005 "Severity (attribute)"
 * component[severity].value[x] only CodeableConcept
@@ -57,3 +60,17 @@ Description: "Significant incidental finding detected during low-dose chest comp
 * component[size].valueQuantity.system = $ucum
 * component[size].valueQuantity.code = #mm
 * component[size] ^short = "Size of finding in mm"
+
+* component[density].code = $sct#28328005 "Abnormal radiologic density"
+* component[density].value[x] only CodeableConcept
+* component[density].valueCodeableConcept from FindingDensityVS (extensible)
+* component[density] ^short = "Density: cystic, solid, complex"
+
+* component[multiplicity].code = $sct#246454002 "Occurrence (attribute)"
+* component[multiplicity].value[x] only CodeableConcept
+* component[multiplicity].valueCodeableConcept from FindingMultiplicityVS (extensible)
+
+* component[lymphNodeLocation].code = $sct#439985001 "Area of body region by imaging measurement"
+* component[lymphNodeLocation].value[x] only CodeableConcept
+* component[lymphNodeLocation].valueCodeableConcept from LymphNodeLocationVS (extensible)
+* component[lymphNodeLocation] ^short = "Location of lymphadenopathy"

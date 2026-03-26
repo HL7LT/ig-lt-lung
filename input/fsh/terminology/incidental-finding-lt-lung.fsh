@@ -20,14 +20,25 @@ Description: "Significant incidental findings in the chest and abdominal areas d
 * $sct#39839004 "Diaphragmatic hernia (disorder)"
 * $sct#286972004 "Complicated diaphragmatic hernia (disorder)"
 * $sct#95436008 "Lung consolidation (disorder)"
+// Lung consolidation should also have 2 subtypes / interpretatioms
 * $sct#154283005 "Pulmonary tuberculosis (disorder)"
+// do we need to add code for suspected tuberculosis?
+* $sct#113254000 "Structure of interstitial tissue of lung (body structure)" // also need to add subtypes to this, but no snomed codes
 
 // === 1.2.2.2 Random findings not in the lungs ===
 * $sct#445512009 "Calcification of coronary artery (disorder)"
+// do we need to add a code for visual estimation of calcification?
 * $sct#250978003 "Aortic valve calcification (disorder)"
 * $sct#433068007 "Aneurysm of thoracic aorta (disorder)"
 * $sct#94147001 "Mass of mediastinum (finding)"
+* $sct#396361002 "Lesion size, largest dimension (observable entity)" //added
+* $sct#28328005 "Abnormal radiologic density (finding)" //added
+* $sct#129748009 "Radiographic calcification finding (finding)" //added
 * $sct#30746006 "Lymphadenopathy (disorder)"
+* $sct#704281009 "Head and neck lymphadenopathy (disorder)" //added
+* $sct#52324001 "Mediastinal lymphadenopathy (disorder)" //added
+* $sct#87500009 "Hilar lymphadenopathy (disorder)" //added
+* $sct#127189005 "Axillary lymphadenopathy (disorder)" //added
 * $sct#237557003 "Mass of thyroid gland (finding)"
 * $sct#373945007 "Pericardial effusion (disorder)"
 * $sct#37657006 "Disorder of esophagus (disorder)"

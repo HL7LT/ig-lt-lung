@@ -16,7 +16,7 @@ morphological features, measurements, and optional note.
 * status 1..1
 * status = #final
 * code 1..1
-* code = $sct#786838002 "Nodule of lung"
+* code = $sct#427359005 "Solitary nodule of lung"
 * subject 1..1
 * subject only Reference(PatientLt)
 * encounter 0..1
@@ -41,9 +41,7 @@ morphological features, measurements, and optional note.
 * component ^slicing.rules = #open
 * component contains
     ctSliceNumber 0..1 and
-    spiculation 0..1 and
-    irregularMargins 0..1 and
-    pleuralAssociation 0..1 and
+    morphology 0..* and
     meanDiameter 0..1 and
     longAxis 0..1 and
     shortAxis 0..1 and
@@ -56,17 +54,10 @@ morphological features, measurements, and optional note.
 * component[ctSliceNumber].value[x] only integer
 * component[ctSliceNumber] ^short = "CT slice number"
 
-* component[spiculation].code = $sct#129742005 "Lesion with spiculated margin"
-* component[spiculation].value[x] only boolean
-* component[spiculation] ^short = "Whether the nodule has spiculated margins"
-
-* component[irregularMargins].code = $sct#129739004 "Lesion with microlobulated margin"
-* component[irregularMargins].value[x] only boolean
-* component[irregularMargins] ^short = "Whether the nodule has irregular / microlobulated margins"
-
-* component[pleuralAssociation].code = PulmonaryNoduleComponentCode#pleural-association "Associated with pleura"
-* component[pleuralAssociation].value[x] only boolean
-* component[pleuralAssociation] ^short = "Whether the nodule is associated with pleura"
+* component[morphology].code = PulmonaryNoduleComponentCode#morphology "Morphology"
+* component[morphology].value[x] only CodeableConcept
+* component[morphology].valueCodeableConcept from PulmonaryNoduleMorphologyVS (required)
+* component[morphology] ^short = "Morphology characteristics of the nodule; multiple values allowed"
 
 * component[meanDiameter].code = $sct#255586005 "Mean"
 * component[meanDiameter].value[x] only Quantity

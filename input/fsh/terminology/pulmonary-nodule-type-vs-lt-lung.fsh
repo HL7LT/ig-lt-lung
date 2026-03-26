@@ -11,5 +11,5 @@ early diagnosis programme.
 * $sct#35702001 "Solid"
 * $sct#1217294009 "Ground glass lung opacity"
 * $sct#255347005 "Hollow"
-* $sct#255003 "Calcified nodule"
+* $sct#129748009 "Radiographic calcification finding (finding)"
 * PulmonaryNoduleTypeLocal#part-solid "Part-solid"
