@@ -91,7 +91,16 @@ Individual findings are represented as structured **Observation** resources desc
 - size or volume,
 - evolution compared to previous examinations.
 
-The interpretation results are compiled into a structured **diagnostic imaging report**, represented as a [LungReportLtLung](StructureDefinition-lung-report-lt-lung.html) (DiagnosticReport) resource that wraps a [LungCompositionLtLung](StructureDefinition-lung-composition-lt-lung.html) (Composition) and aggregates all structured findings. Individual nodule findings are captured using the [PulmonaryNoduleObservationLtLung](StructureDefinition-pulmonary-nodule-observation-lt-lung.html) profile, while significant incidental findings are documented using the [IncidentalFindingLtLung](StructureDefinition-incidental-finding-lt-lung.html) profile. The LDCT report data is captured in the [LDCT Questionnaire](Questionnaire-questionnaire-ldct-lt-lung.html).
+The interpretation results are compiled into a structured **diagnostic imaging report**, represented as a [LungReportLtLung](StructureDefinition-lung-report-lt-lung.html) (DiagnosticReport) resource that wraps a [LungCompositionLtLung](StructureDefinition-lung-composition-lt-lung.html) (Composition) and aggregates all structured findings.
+
+Individual findings are captured using specialised observation profiles:
+
+- [PulmonaryNoduleObservationLtLung](StructureDefinition-pulmonary-nodule-observation-lt-lung.html) — pulmonary nodules with type, location, morphology, and measurements,
+- [IncidentalFindingLtLung](StructureDefinition-incidental-finding-lt-lung.html) — general incidental findings with severity, laterality, density, and quantity components,
+- [MediastinalMassLtLung](StructureDefinition-mediastinal-mass-lt-lung.html) — mediastinal masses with size, changed density, and calcification,
+- [KidneyLesionLtLung](StructureDefinition-kidney-lesion-lt-lung.html) — kidney lesions with body site, density, and largest dimension.
+
+The LDCT report data is captured in the [LDCT Questionnaire](Questionnaire-questionnaire-ldct-lt-lung.html).
 
 ## Risk stratification and LUNG-RADS assessment
 
@@ -99,11 +108,16 @@ A central step in the workflow is the classification of imaging findings accordi
 
 LUNG-RADS categories provide a standardised interpretation of screening findings and determine the recommended next step in the clinical pathway.
 
-Typical outcomes include:
+In the Lithuanian programme, outcomes include:
 
-- **Category 1–2** → negative or benign findings, routine annual screening,
-- **Category 3** → probably benign findings, short-interval follow-up imaging,
-- **Category 4** → suspicious findings requiring additional diagnostic evaluation or referral.
+- **Category 0** → images cannot be evaluated; comparison with previous CT or repeat LDCT after 1 month,
+- **Category 1** → no findings; repeat LDCT after 36 months,
+- **Category 2** → very likely benign; repeat LDCT after 12–36 months (radiologist chooses),
+- **Category 3** → probably benign; follow-up LDCT after 6 months,
+- **Category 4A** → suspicious; follow-up LDCT after 3 months,
+- **Category 4B** → very suspicious; referral to oncology cluster for pulmonologist consultation,
+- **Category 4X** → extremely suspicious; referral to oncology cluster for pulmonologist consultation,
+- **S modifier** → significant incidental finding; referral to appropriate specialist depending on findings.
 
 In the FHIR model, the LUNG-RADS category is represented as a [LungRadsAssessmentLtLung](StructureDefinition-lung-rads-assessment-lt-lung.html) Observation, while the resulting recommendation is expressed as a [LungRecommendationObservationLtLung](StructureDefinition-lung-recommendation-observation-lt-lung.html) Observation linked to the assessment.
 

@@ -28,11 +28,17 @@ Description: "Lung-specific imaging composition extending the base imaging compo
 * section[findings].entry contains
     pulmonaryNodule 0..* and
     incidentalFinding 0..* and
+    mediastinalMass 0..* and
+    kidneyLesion 0..* and
     radiationDose 0..*
 * section[findings].entry[pulmonaryNodule] only Reference(PulmonaryNoduleObservationLtLung)
 * section[findings].entry[pulmonaryNodule] ^short = "Pulmonary nodule observation"
 * section[findings].entry[incidentalFinding] only Reference(IncidentalFindingLtLung)
 * section[findings].entry[incidentalFinding] ^short = "Significant incidental finding (pulmonary or extra-pulmonary)"
+* section[findings].entry[mediastinalMass] only Reference(MediastinalMassLtLung)
+* section[findings].entry[mediastinalMass] ^short = "Mediastinal mass observation"
+* section[findings].entry[kidneyLesion] only Reference(KidneyLesionLtLung)
+* section[findings].entry[kidneyLesion] ^short = "Kidney lesion observation"
 * section[findings].entry[radiationDose] only Reference(Observation)
 * section[findings].entry[radiationDose] ^short = "Radiation dose observation (CTDIvol, DLP)"
 // TODO: constrain radiationDose to ObservationRadiationDoseEuImaging once available in lt.hl7.fhir.eu dependency

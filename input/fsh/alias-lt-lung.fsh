@@ -9,6 +9,8 @@ Alias: $pulmonary-nodule-observation-lt-lung-url = https://hl7.lt/fhir/lung/Stru
 Alias: $lung-report-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/lung-report-lt-lung
 Alias: $lung-composition-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/lung-composition-lt-lung
 Alias: $incidental-finding-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/incidental-finding-lt-lung
+Alias: $mediastinal-mass-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/mediastinal-mass-lt-lung
+Alias: $kidney-lesion-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/kidney-lesion-lt-lung
 
 // === Terminology - CodeSystems ===
 // Terminology URLs omit the IG suffix in the path (shared across IGs)
@@ -26,6 +28,9 @@ Alias: $finding-multiplicity-vs-url = https://tx.hl7.lt/fhir/ValueSet/finding-mu
 Alias: $lymph-node-location-vs-url = https://tx.hl7.lt/fhir/ValueSet/lymph-node-location
 Alias: $coronary-calcification-score-vs-url = https://tx.hl7.lt/fhir/ValueSet/coronary-calcification-score
 Alias: $interstitial-lung-change-vs-url = https://tx.hl7.lt/fhir/ValueSet/interstitial-lung-change
+Alias: $finding-quantity-vs-url = https://tx.hl7.lt/fhir/ValueSet/finding-quantity
+Alias: $kidney-lesion-density-vs-url = https://tx.hl7.lt/fhir/ValueSet/kidney-lesion-density
+Alias: $kidney-laterality-vs-url = https://tx.hl7.lt/fhir/ValueSet/kidney-laterality
 
 // === Terminology - ValueSets ===
 Alias: $lung-rads-category-vs-url = https://tx.hl7.lt/fhir/ValueSet/lung-rads-category

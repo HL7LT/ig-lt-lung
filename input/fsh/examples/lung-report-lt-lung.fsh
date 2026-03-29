@@ -16,10 +16,10 @@ Description: "Complete LDCT screening report with composition, LUNG-RADS 4A asse
 * issued = "2025-11-20T16:00:00+02:00"
 * performer[author] = Reference(PractitionerRole/example-practitioner-role)
 * composition = Reference(lung-composition-ldct-example)
-* result[0] = Reference(observation-lung-rads-4a-example)
-* result[+] = Reference(observation-pulmonary-nodule-solid-example)
-* result[+] = Reference(observation-incidental-coronary-calcification-example)
-* result[+] = Reference(observation-lung-recommendation-3m-example)
+* result[lungRads] = Reference(observation-lung-rads-4a-example)
+* result[pulmonaryNodule] = Reference(observation-pulmonary-nodule-solid-example)
+* result[incidentalFinding] = Reference(observation-incidental-coronary-calcification-example)
+* result[recommendation] = Reference(observation-lung-recommendation-3m-example)
 * conclusion = "LUNG-RADS 4A: Suspicious solid nodule in right upper lobe (9mm). Moderate coronary artery calcification. Recommend 3-month follow-up LDCT."
 
 Instance: example-practitioner-role

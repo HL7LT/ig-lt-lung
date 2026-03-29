@@ -96,6 +96,9 @@ parameters:
     - https://tx.hl7.lt/fhir/ValueSet/lymph-node-location
     - https://tx.hl7.lt/fhir/ValueSet/coronary-calcification-score
     - https://tx.hl7.lt/fhir/ValueSet/interstitial-lung-change
+    - https://tx.hl7.lt/fhir/ValueSet/finding-quantity
+    - https://tx.hl7.lt/fhir/ValueSet/kidney-lesion-density
+    - https://tx.hl7.lt/fhir/ValueSet/kidney-laterality
 
   excludettl: true
   shownav: true

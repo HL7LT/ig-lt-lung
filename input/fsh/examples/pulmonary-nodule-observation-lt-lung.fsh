@@ -6,7 +6,7 @@ Usage: #example
 * subject = Reference(example-patient-male)
 * performer = Reference(example-practitioner)
 * effectiveDateTime = "2025-09-22T10:20:00Z"
-* valueCodeableConcept = $sct#35702001 "Solid"
+* component[noduleType].valueCodeableConcept = $sct#35702001 "Solid"
 * bodySite = $sct#42400003 "Structure of upper lobe of right lung"
 * component[ctSliceNumber].valueInteger = 84
 * component[morphology][0].valueCodeableConcept = $sct#129742005 "Lesion with spiculated margin"
@@ -24,7 +24,7 @@ Usage: #example
 * subject = Reference(example-patient-male)
 * performer = Reference(example-practitioner)
 * effectiveDateTime = "2025-09-22T10:25:00Z"
-* valueCodeableConcept = $pulmonary-nodule-type-local-cs-url#part-solid "Part-solid"
+* component[noduleType].valueCodeableConcept = $pulmonary-nodule-type-local-cs-url#part-solid "Part-solid"
 * bodySite = $sct#44714003 "Structure of upper lobe of left lung"
 * component[ctSliceNumber].valueInteger = 102
 * component[morphology][0].valueCodeableConcept = $sct#129739004 "Lesion with microlobulated margin"
@@ -47,7 +47,7 @@ Usage: #example
 * subject = Reference(example-patient-male)
 * performer = Reference(example-practitioner)
 * effectiveDateTime = "2025-09-22T10:28:00Z"
-* valueCodeableConcept = $sct#1217294009 "Ground glass lung opacity"
+* component[noduleType].valueCodeableConcept = $sct#1217294009 "Ground glass lung opacity"
 * bodySite = $sct#72481006 "Structure of middle lobe of right lung"
 * component[ctSliceNumber].valueInteger = 91
 * component[morphology][0].valueCodeableConcept = $sct#896998003 "Structural abnormality of subpleural tissue"

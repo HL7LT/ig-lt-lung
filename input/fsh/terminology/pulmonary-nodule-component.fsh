@@ -11,3 +11,7 @@ code is available in the source dataset.
 * ^content = #complete
 * #ct-slice-number "CT slice number"
 * #morphology "Morphology"
+* #solid-part-mean-diameter "Solid part mean diameter"
+* #solid-part-long-axis "Solid part long axis"
+* #solid-part-short-axis "Solid part short axis"
+* #solid-part-volume "Solid part volume"

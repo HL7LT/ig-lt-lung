@@ -49,7 +49,7 @@ Description: "Significant incidental findings in the chest and abdominal areas d
 
 // 10. Tuberculosis — main code; suspected qualifier handled via interpretation component
 * $sct#154283005 "Pulmonary tuberculosis (disorder)"
-* $sct#415684004 "Suspected (qualifier value)"
+* $sct#772170009 "Tuberculosis suspected (situation)"
 
 // === 1.2.2.2 Random findings not in the lungs ===
 
