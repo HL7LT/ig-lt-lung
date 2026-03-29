@@ -13,6 +13,7 @@ radiological conclusion and programme rules.
 * ^experimental = false
 * ^content = #complete
 * #repeat-36m "Repeat LDCT after 36 months"
+* #repeat-1m "Repeat LDCT after 1 month"
 * #insufficient-prior-images "Insufficient data - previous images required for comparison"
 * #followup-12m "Follow-up LDCT after 12 months"
 * #followup-6m "Follow-up LDCT after 6 months"

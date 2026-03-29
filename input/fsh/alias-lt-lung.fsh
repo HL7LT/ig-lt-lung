@@ -18,6 +18,14 @@ Alias: $lung-recommendation-cs-url = https://tx.hl7.lt/fhir/CodeSystem/lung-reco
 Alias: $pulmonary-nodule-type-local-cs-url = https://tx.hl7.lt/fhir/CodeSystem/pulmonary-nodule-type-local
 Alias: $pulmonary-nodule-component-code-cs-url = https://tx.hl7.lt/fhir/CodeSystem/pulmonary-nodule-component-code
 Alias: $lung-questionnaire-options-cs-url = https://tx.hl7.lt/fhir/CodeSystem/lung-questionnaire-options
+Alias: $snomed-extension-code-cs-url = https://tx.hl7.lt/fhir/CodeSystem/snomed-extension-code
+
+// === Terminology - Additional ValueSets ===
+Alias: $finding-density-vs-url = https://tx.hl7.lt/fhir/ValueSet/finding-density
+Alias: $finding-multiplicity-vs-url = https://tx.hl7.lt/fhir/ValueSet/finding-multiplicity
+Alias: $lymph-node-location-vs-url = https://tx.hl7.lt/fhir/ValueSet/lymph-node-location
+Alias: $coronary-calcification-score-vs-url = https://tx.hl7.lt/fhir/ValueSet/coronary-calcification-score
+Alias: $interstitial-lung-change-vs-url = https://tx.hl7.lt/fhir/ValueSet/interstitial-lung-change
 
 // === Terminology - ValueSets ===
 Alias: $lung-rads-category-vs-url = https://tx.hl7.lt/fhir/ValueSet/lung-rads-category

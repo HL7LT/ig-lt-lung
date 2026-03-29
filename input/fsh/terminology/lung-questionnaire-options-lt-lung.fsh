@@ -75,6 +75,25 @@ Description: "Illustrative answer option codes for ESPBI questionnaire forms use
 * #tuberculosis "Tuberculosis, likely active"
 * #suspected-tuberculosis-other "Suspected tuberculosis differentiated from other diseases"
 
+// --- Pleural fluid quantity ---
+* #small-amount "Small amount"
+* #large-amount "Large amount"
+
+// --- Pleural calcification extent ---
+* #local "Local"
+* #diffuse "Diffuse"
+
+// --- Lymphadenopathy location ---
+* #neck "Neck"
+* #paraclavicular "Paraclavicular"
+* #mediastinal "Mediastinal"
+* #hilar-right "Hilar - right"
+* #hilar-left "Hilar - left"
+* #hilar-both "Hilar - both"
+* #axillary-right "Axillary - right"
+* #axillary-left "Axillary - left"
+* #axillary-both "Axillary - both"
+
 // --- Incidental findings – non-lung ---
 * #coronary-calcification "Coronary artery calcification"
 * #aortic-valve-calcification "Aortic valve calcification"

@@ -16,6 +16,9 @@ Description: "Example lung LDCT composition with findings (solid nodule, coronar
 * date = "2025-11-20T15:00:00Z"
 * author[author] = Reference(PractitionerRole/example-practitioner-role)
 * title = "Low-Dose Chest CT Screening Report"
+* custodian = Reference(Organization/example-organization-ldct)
+* attester[0].mode = http://hl7.org/fhir/composition-attestation-mode#professional "Professional"
+* attester[0].party = Reference(PractitionerRole/example-practitioner-role)
 * extension[diagnosticreport-reference].valueReference = Reference(diagnosticreport-lung-report-example)
 
 // Events
@@ -87,3 +90,13 @@ Description: "Example LDCT screening procedure."
 * code = $sct#16334891000119106 "Low dose computed tomography of chest without contrast (procedure)"
 * subject = Reference(example-patient-male)
 * occurrenceDateTime = "2025-11-20T14:30:00Z"
+
+Instance: example-organization-ldct
+InstanceOf: Organization
+Usage: #example
+Title: "Organization: Santaros Klinikos (example)"
+Description: "Example healthcare institution where the LDCT was performed."
+* active = true
+* name = "Vilniaus universiteto ligonines Santaros klinikos"
+* identifier[0].system = "https://registrai.lt/organization"
+* identifier[0].value = "111111111"

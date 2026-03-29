@@ -71,7 +71,7 @@ Capturing this information supports:
 - quality assurance of screening procedures,
 - longitudinal comparison of repeated examinations.
 
-These data elements may be represented as structured **Observation** resources linked to the imaging procedure.
+Radiation dose observations are referenced from the [LungCompositionLtLung](StructureDefinition-lung-composition-lt-lung.html) findings section and are based on the EU Imaging radiation dose observation profile.
 
 ## Radiological interpretation and reporting
 

@@ -90,6 +90,12 @@ parameters:
     - https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-morphology
     - https://tx.hl7.lt/fhir/ValueSet/incidental-finding
     - https://tx.hl7.lt/fhir/CodeSystem/lung-questionnaire-options
+    - https://tx.hl7.lt/fhir/CodeSystem/snomed-extension-code
+    - https://tx.hl7.lt/fhir/ValueSet/finding-density
+    - https://tx.hl7.lt/fhir/ValueSet/finding-multiplicity
+    - https://tx.hl7.lt/fhir/ValueSet/lymph-node-location
+    - https://tx.hl7.lt/fhir/ValueSet/coronary-calcification-score
+    - https://tx.hl7.lt/fhir/ValueSet/interstitial-lung-change
 
   excludettl: true
   shownav: true

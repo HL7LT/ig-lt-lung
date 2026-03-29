@@ -118,38 +118,59 @@ Description: "Structured data-capture form for the pre-examination questionnaire
 * item[4].item[1].linkId = "cigarettes"
 * item[4].item[1].text = "Cigarettes"
 * item[4].item[1].type = #coding
+* item[4].item[1].enableWhen[0].question = "smokes"
+* item[4].item[1].enableWhen[0].operator = #=
+* item[4].item[1].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 * item[4].item[1].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#yes "Yes"
 * item[4].item[1].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#no "No"
 
 * item[4].item[1].item[0].linkId = "cigarettes-per-day"
 * item[4].item[1].item[0].text = "Number of cigarettes per day"
 * item[4].item[1].item[0].type = #integer
+* item[4].item[1].item[0].enableWhen[0].question = "cigarettes"
+* item[4].item[1].item[0].enableWhen[0].operator = #=
+* item[4].item[1].item[0].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 
 * item[4].item[1].item[1].linkId = "pack-years"
 * item[4].item[1].item[1].text = "Number of pack-years"
-* item[4].item[1].item[1].type = #integer
+* item[4].item[1].item[1].type = #decimal
+* item[4].item[1].item[1].enableWhen[0].question = "cigarettes"
+* item[4].item[1].item[1].enableWhen[0].operator = #=
+* item[4].item[1].item[1].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 
 * item[4].item[2].linkId = "e-cigarettes"
 * item[4].item[2].text = "Electronic cigarettes"
 * item[4].item[2].type = #coding
+* item[4].item[2].enableWhen[0].question = "smokes"
+* item[4].item[2].enableWhen[0].operator = #=
+* item[4].item[2].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 * item[4].item[2].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#yes "Yes"
 * item[4].item[2].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#no "No"
 
 * item[4].item[3].linkId = "heated-tobacco"
 * item[4].item[3].text = "Heated tobacco"
 * item[4].item[3].type = #coding
+* item[4].item[3].enableWhen[0].question = "smokes"
+* item[4].item[3].enableWhen[0].operator = #=
+* item[4].item[3].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 * item[4].item[3].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#yes "Yes"
 * item[4].item[3].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#no "No"
 
 * item[4].item[4].linkId = "tobacco"
 * item[4].item[4].text = "Tobacco (smokeless)"
 * item[4].item[4].type = #coding
+* item[4].item[4].enableWhen[0].question = "smokes"
+* item[4].item[4].enableWhen[0].operator = #=
+* item[4].item[4].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 * item[4].item[4].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#yes "Yes"
 * item[4].item[4].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#no "No"
 
 * item[4].item[5].linkId = "pipe"
 * item[4].item[5].text = "Pipe"
 * item[4].item[5].type = #coding
+* item[4].item[5].enableWhen[0].question = "smokes"
+* item[4].item[5].enableWhen[0].operator = #=
+* item[4].item[5].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 * item[4].item[5].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#yes "Yes"
 * item[4].item[5].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#no "No"
 
@@ -170,10 +191,16 @@ Description: "Structured data-capture form for the pre-examination questionnaire
 * item[5].item[1].linkId = "years-smoked"
 * item[5].item[1].text = "How many years did he/she smoke?"
 * item[5].item[1].type = #integer
+* item[5].item[1].enableWhen[0].question = "smoked-before"
+* item[5].item[1].enableWhen[0].operator = #=
+* item[5].item[1].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 
 * item[5].item[2].linkId = "years-quit"
 * item[5].item[2].text = "How many years have not smoked"
 * item[5].item[2].type = #integer
+* item[5].item[2].enableWhen[0].question = "smoked-before"
+* item[5].item[2].enableWhen[0].operator = #=
+* item[5].item[2].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 
 // ---------------------------------------------------------------------------
 // Group 7 – Current diagnoses
@@ -184,8 +211,10 @@ Description: "Structured data-capture form for the pre-examination questionnaire
 
 * item[6].item[0].linkId = "diagnoses"
 * item[6].item[0].text = "Diagnoses before examination (ICD codes)"
-* item[6].item[0].type = #text
+* item[6].item[0].type = #open-choice
+* item[6].item[0].repeats = true
 * item[6].item[0].required = false
+* item[6].item[0].answerValueSet = "http://hl7.org/fhir/sid/icd-10"
 
 // =============================================================================
 // QuestionnaireResponse: Pre-LDCT example

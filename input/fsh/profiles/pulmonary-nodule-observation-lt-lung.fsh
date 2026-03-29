@@ -41,7 +41,7 @@ morphological features, measurements, and optional note.
 * component ^slicing.rules = #open
 * component contains
     ctSliceNumber 0..1 and
-    morphology 0..* and
+    morphology 1..* and
     meanDiameter 0..1 and
     longAxis 0..1 and
     shortAxis 0..1 and

@@ -13,6 +13,27 @@ Description: "Overall lung LDCT diagnostic report covering the low-dose chest co
 
 * composition only Reference(LungCompositionLtLung)
 
+// --- Performer: reporting specialist and technologist ---
+* performer 1..*
+* performer only Reference(PractitionerLt or PractitionerRoleLt or OrganizationLt)
+* performer ^short = "Specialist(s) involved in the LDCT screening (technologist, reporting radiologist)"
+
+// --- Result slicing ---
 * result MS
-* result ^short = "Lung screening results: LUNG-RADS assessments, nodule observations, incidental findings, recommendations"
-* result ^definition = "References to Observation resources that carry the structured findings of the LDCT screening process."
+* result ^slicing.discriminator.type = #profile
+* result ^slicing.discriminator.path = "$this"
+* result ^slicing.ordered = false
+* result ^slicing.rules = #open
+* result contains
+    lungRads 0..* and
+    pulmonaryNodule 0..* and
+    incidentalFinding 0..* and
+    recommendation 0..*
+* result[lungRads] only Reference(LungRadsAssessmentLtLung)
+* result[lungRads] ^short = "LUNG-RADS assessment"
+* result[pulmonaryNodule] only Reference(PulmonaryNoduleObservationLtLung)
+* result[pulmonaryNodule] ^short = "Pulmonary nodule observation"
+* result[incidentalFinding] only Reference(IncidentalFindingLtLung)
+* result[incidentalFinding] ^short = "Incidental finding"
+* result[recommendation] only Reference(LungRecommendationObservationLtLung)
+* result[recommendation] ^short = "Follow-up recommendation"
