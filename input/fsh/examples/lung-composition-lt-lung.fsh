@@ -6,31 +6,31 @@ Instance: lung-composition-ldct-example
 InstanceOf: LungCompositionLtLung
 Usage: #example
 Title: "Composition: LDCT Screening Report (example)"
-Description: "Example lung LDCT composition with findings (solid nodule, coronary calcification), LUNG-RADS 4A impression, and 3-month follow-up recommendation."
+Description: "LDCT screening composition with solid nodule in right upper lobe, moderate coronary calcification, LUNG-RADS 4A impression, and 3-month follow-up recommendation."
 * status = #final
 * type.coding[eu-template] = $Hl7EuDocumentTypes#imaging-report-v0-0-1 "Imaging Report V0.0.1"
 * category[imaging] = $loinc#18748-4 "Diagnostic imaging study"
 * identifier.system = "https://hl7.lt/fhir/lung/composition-id"
 * identifier.value = "LDCT-2025-001"
-* subject = Reference(example-patient-male)
+* subject = Reference(patient-male-example)
 * date = "2025-11-20T15:00:00Z"
-* author[author] = Reference(PractitionerRole/example-practitioner-role)
+* author[author] = Reference(PractitionerRole/practitionerrole-radiologist-example)
 * title = "Low-Dose Chest CT Screening Report"
-* custodian = Reference(Organization/example-organization-ldct)
+* custodian = Reference(Organization/organization-ldct-example)
 * attester[0].mode = http://hl7.org/fhir/composition-attestation-mode#professional "Professional"
-* attester[0].party = Reference(PractitionerRole/example-practitioner-role)
+* attester[0].party = Reference(PractitionerRole/practitionerrole-radiologist-example)
 * extension[diagnosticreport-reference].valueReference = Reference(diagnosticreport-lung-report-example)
 
 // Events
-* event[imagingstudy].detail = Reference(ImagingStudy/example-imaging-study-ldct)
+* event[imagingstudy].detail = Reference(ImagingStudy/imagingstudy-ldct-example)
 * event[imagingstudy].detail.concept = $dicom-dcm#CT "Computed Tomography"
-* event[procedure].detail = Reference(Procedure/example-procedure-ldct)
+* event[procedure].detail = Reference(Procedure/procedure-ldct-example)
 * event[procedure].detail.concept = $sct#16334891000119106 "Low dose computed tomography of chest without contrast (procedure)"
 
 // Imaging Study section
 * section[imagingstudy].code = $loinc#18726-0
 * section[imagingstudy].title = "Imaging Study"
-* section[imagingstudy].entry[imagingstudy] = Reference(ImagingStudy/example-imaging-study-ldct)
+* section[imagingstudy].entry[imagingstudy] = Reference(ImagingStudy/imagingstudy-ldct-example)
 
 // Order section
 * section[order].code = $loinc#55115-0 "Requested imaging studies information Document"
@@ -46,7 +46,7 @@ Description: "Example lung LDCT composition with findings (solid nodule, coronar
 // Procedure section
 * section[procedure].code = $loinc#55111-9 "Current imaging procedure descriptions Document"
 * section[procedure].title = "Procedure"
-* section[procedure].entry[procedure] = Reference(Procedure/example-procedure-ldct)
+* section[procedure].entry[procedure] = Reference(Procedure/procedure-ldct-example)
 
 // Comparison section
 * section[comparison].code = $loinc#18834-2 "Radiology Comparison study (narrative)"
@@ -71,31 +71,31 @@ Description: "Example lung LDCT composition with findings (solid nodule, coronar
 
 // --- Supporting resources referenced by composition ---
 
-Instance: example-imaging-study-ldct
+Instance: imagingstudy-ldct-example
 InstanceOf: ImagingStudy
 Usage: #example
 Title: "ImagingStudy: LDCT Screening (example)"
-Description: "Example LDCT imaging study for lung cancer screening."
+Description: "Low-dose chest CT imaging study acquired during lung cancer screening."
 * status = #available
-* subject = Reference(example-patient-male)
+* subject = Reference(patient-male-example)
 * started = "2025-11-20T14:30:00Z"
 * modality = $dicom-dcm#CT "Computed Tomography"
 
-Instance: example-procedure-ldct
+Instance: procedure-ldct-example
 InstanceOf: Procedure
 Usage: #example
 Title: "Procedure: LDCT Screening (example)"
-Description: "Example LDCT screening procedure."
+Description: "Low-dose chest CT procedure performed as part of the lung cancer screening programme."
 * status = #completed
 * code = $sct#16334891000119106 "Low dose computed tomography of chest without contrast (procedure)"
-* subject = Reference(example-patient-male)
+* subject = Reference(patient-male-example)
 * occurrenceDateTime = "2025-11-20T14:30:00Z"
 
-Instance: example-organization-ldct
+Instance: organization-ldct-example
 InstanceOf: Organization
 Usage: #example
 Title: "Organization: Santaros Klinikos (example)"
-Description: "Example healthcare institution where the LDCT was performed."
+Description: "Healthcare institution where the LDCT screening examination was performed."
 * active = true
 * name = "Vilniaus universiteto ligonines Santaros klinikos"
 * identifier[0].system = "https://registrai.lt/organization"

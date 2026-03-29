@@ -228,7 +228,7 @@ Description: "Pre-LDCT screening questionnaire example – active smoker, 30 pac
 * questionnaire = "https://hl7.lt/fhir/lung/Questionnaire/questionnaire-pre-ldct-lt-lung"
 * status = #completed
 * authored = "2025-11-20T13:00:00Z"
-* subject = Reference(example-patient-male)
+* subject = Reference(patient-male-example)
 
 // Group 1 – Registration
 * item[0].linkId = "grp-registration"

@@ -39,9 +39,8 @@ Description: "Lung-specific imaging composition extending the base imaging compo
 * section[findings].entry[mediastinalMass] ^short = "Mediastinal mass observation"
 * section[findings].entry[kidneyLesion] only Reference(KidneyLesionLtLung)
 * section[findings].entry[kidneyLesion] ^short = "Kidney lesion observation"
-* section[findings].entry[radiationDose] only Reference(Observation)
+* section[findings].entry[radiationDose] only Reference($ObservationRadiationDoseEuImagingUrl)
 * section[findings].entry[radiationDose] ^short = "Radiation dose observation (CTDIvol, DLP)"
-// TODO: constrain radiationDose to ObservationRadiationDoseEuImaging once available in lt.hl7.fhir.eu dependency
 
 // Impression section — add LUNG-RADS assessment slice
 * section[impression].entry contains

@@ -791,8 +791,8 @@ Description: "LDCT screening example – solid nodule in right upper lobe, moder
 * questionnaire = "https://hl7.lt/fhir/lung/Questionnaire/questionnaire-ldct-lt-lung"
 * status = #completed
 * authored = "2025-11-20T15:00:00Z"
-* subject = Reference(example-patient-male)
-* author = Reference(example-practitioner)
+* subject = Reference(patient-male-example)
+* author = Reference(practitioner-radiologist-example)
 
 // Group 1 – General information
 * item[0].linkId = "grp-general"

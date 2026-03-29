@@ -1,8 +1,8 @@
-Instance: example-patient-male
+Instance: patient-male-example
 InstanceOf: PatientLt
 Usage: #example
 Title: "Patient: Male (example)"
-Description: "Example of a male patient for lung cancer screening examples."
+Description: "Male patient participating in the lung cancer screening programme."
 * identifier.system = "https://hl7.lt/fhir/sid/lt-patient-pid"
 * identifier.value = "39001010001"
 * name.family = "Pavardenis"
