@@ -13,18 +13,10 @@ Description: "Lung-specific imaging composition extending the base imaging compo
 * relatesTo ^short = "Link to prior LDCT examination report or study, if available (ADP 1.1.8)"
 
 // --- Performer: technologist and reporting specialist ---
+// author slicing (author + authoringDevice) and attester slicing are
+// inherited from ImagingCompositionLt — no need to re-constrain types.
 * author 1..*
-* author only Reference(PractitionerLt or PractitionerRoleLt or OrganizationLt)
 * author ^short = "Specialist(s) who authored the composition (radiologist, technologist)"
-
-* attester 0..*
-* attester.party only Reference(PractitionerLt or PractitionerRoleLt or OrganizationLt)
-* attester ^short = "Specialist who attested the conclusion and recommendations"
-
-// --- Custodian: healthcare institution ---
-* custodian 1..1
-* custodian only Reference(OrganizationLt)
-* custodian ^short = "Healthcare institution where the LDCT was performed"
 
 // Findings section — add lung-specific finding slices
 * section[findings].entry ^slicing.discriminator.type = #profile
