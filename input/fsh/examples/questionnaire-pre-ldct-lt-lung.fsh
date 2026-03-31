@@ -220,7 +220,8 @@ Description: "Structured data-capture form for the pre-examination questionnaire
 
 * item[6].item[0].linkId = "diagnoses"
 * item[6].item[0].text = "Diagnoses before examination (ICD codes)"
-* item[6].item[0].type = #open-choice
+* item[6].item[0].type = #coding
+* item[6].item[0].answerConstraint = #optionsOrString
 * item[6].item[0].repeats = true
 * item[6].item[0].required = false
 * item[6].item[0].answerValueSet = "http://hl7.org/fhir/sid/icd-10"
