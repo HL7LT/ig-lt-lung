@@ -31,7 +31,7 @@ This questionnaire captures information such as:
 - functional status and general health indicators,
 - smoking and nicotine exposure history,
 - anthropometric measurements,
-- history of previous chest CT examinations,
+- history of previous chest CT examinations, including examination date(s) when known (ADP 1.1.8),
 - recent respiratory infections,
 - other clinically relevant background information.
 
@@ -98,7 +98,10 @@ Individual findings are captured using specialised observation profiles:
 - [PulmonaryNoduleObservationLtLung](StructureDefinition-pulmonary-nodule-observation-lt-lung.html) — pulmonary nodules with type, location, morphology, and measurements,
 - [IncidentalFindingLtLung](StructureDefinition-incidental-finding-lt-lung.html) — general incidental findings with severity, laterality, density, and quantity components,
 - [MediastinalMassLtLung](StructureDefinition-mediastinal-mass-lt-lung.html) — mediastinal masses with size, changed density, and calcification,
-- [KidneyLesionLtLung](StructureDefinition-kidney-lesion-lt-lung.html) — kidney lesions with body site, density, and largest dimension.
+- [KidneyLesionLtLung](StructureDefinition-kidney-lesion-lt-lung.html) — kidney lesions with body site, density, and largest dimension,
+- [AdrenalLesionLtLung](StructureDefinition-adrenal-lesion-lt-lung.html) — adrenal gland lesions with laterality, size, and density in Hounsfield units (HV).
+
+Specific incidental findings carry structured interpretation where applicable. For example, lung consolidation findings can be further classified using the `consolidationInterpretation` component (inflammatory vs. neoplastic), avoiding reliance on free-text notes for clinically significant subtype distinctions.
 
 The LDCT report data is captured in the [LDCT Questionnaire](Questionnaire-questionnaire-ldct-lt-lung.html).
 
@@ -136,7 +139,7 @@ The lung cancer screening programme is inherently **longitudinal**, meaning that
 
 The data model therefore supports:
 
-- comparison with previous imaging studies,
+- comparison with previous imaging studies via `Composition.relatesTo` links to prior LDCT reports,
 - tracking of lesion evolution,
 - structured follow-up planning.
 

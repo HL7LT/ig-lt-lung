@@ -6,6 +6,12 @@ Description: "Lung-specific imaging composition extending the base imaging compo
 * ^url = $lung-composition-lt-lung-url
 * ^status = #active
 
+// --- Prior imaging history (ADP 1.1.8) ---
+// Link to prior LDCT report or study when the previous examination
+// is available in the system. Enables longitudinal comparison.
+* relatesTo 0..*
+* relatesTo ^short = "Link to prior LDCT examination report or study, if available (ADP 1.1.8)"
+
 // --- Performer: technologist and reporting specialist ---
 * author 1..*
 * author only Reference(PractitionerLt or PractitionerRoleLt or OrganizationLt)
@@ -30,6 +36,7 @@ Description: "Lung-specific imaging composition extending the base imaging compo
     incidentalFinding 0..* and
     mediastinalMass 0..* and
     kidneyLesion 0..* and
+    adrenalLesion 0..* and
     radiationDose 0..*
 * section[findings].entry[pulmonaryNodule] only Reference(PulmonaryNoduleObservationLtLung)
 * section[findings].entry[pulmonaryNodule] ^short = "Pulmonary nodule observation"
@@ -39,6 +46,8 @@ Description: "Lung-specific imaging composition extending the base imaging compo
 * section[findings].entry[mediastinalMass] ^short = "Mediastinal mass observation"
 * section[findings].entry[kidneyLesion] only Reference(KidneyLesionLtLung)
 * section[findings].entry[kidneyLesion] ^short = "Kidney lesion observation"
+* section[findings].entry[adrenalLesion] only Reference(AdrenalLesionLtLung)
+* section[findings].entry[adrenalLesion] ^short = "Adrenal gland lesion observation"
 * section[findings].entry[radiationDose] only Reference($ObservationRadiationDoseEuImagingUrl)
 * section[findings].entry[radiationDose] ^short = "Radiation dose observation (CTDIvol, DLP)"
 

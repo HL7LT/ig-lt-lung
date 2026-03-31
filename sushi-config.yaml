@@ -99,6 +99,8 @@ parameters:
     - https://tx.hl7.lt/fhir/ValueSet/finding-quantity
     - https://tx.hl7.lt/fhir/ValueSet/kidney-lesion-density
     - https://tx.hl7.lt/fhir/ValueSet/kidney-laterality
+    - https://tx.hl7.lt/fhir/ValueSet/consolidation-interpretation
+    - https://tx.hl7.lt/fhir/ValueSet/adrenal-laterality
 
   excludettl: true
   shownav: true

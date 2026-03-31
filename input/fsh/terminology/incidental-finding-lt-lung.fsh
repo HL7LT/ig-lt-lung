@@ -43,9 +43,8 @@ Description: "Significant incidental findings in the chest and abdominal areas d
 * $sct#39839004 "Diaphragmatic hernia (disorder)"
 * $sct#286972004 "Complicated diaphragmatic hernia (disorder)"
 
-// 9. Consolidation
+// 9. Consolidation — subtypes modeled via consolidationInterpretation component on IncidentalFindingLtLung
 * $sct#95436008 "Lung consolidation (disorder)"
-// TODO: Add consolidation subtypes (inflammatory vs. malignant) as interpretation component
 
 // 10. Tuberculosis — main code; suspected qualifier handled via interpretation component
 * $sct#154283005 "Pulmonary tuberculosis (disorder)"

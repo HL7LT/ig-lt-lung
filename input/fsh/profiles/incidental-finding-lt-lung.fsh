@@ -45,7 +45,8 @@ Description: "Significant incidental finding detected during low-dose chest comp
     density 0..1 and
     multiplicity 0..1 and
     quantity 0..1 and
-    lymphNodeLocation 0..*
+    lymphNodeLocation 0..* and
+    consolidationInterpretation 0..1
 
 * component[severity].code = $sct#246112005 "Severity (attribute)"
 * component[severity].value[x] only CodeableConcept
@@ -84,3 +85,8 @@ Description: "Significant incidental finding detected during low-dose chest comp
 * component[lymphNodeLocation].value[x] only CodeableConcept
 * component[lymphNodeLocation].valueCodeableConcept from LymphNodeLocationVS (extensible)
 * component[lymphNodeLocation] ^short = "Location of lymphadenopathy"
+
+* component[consolidationInterpretation].code = $sct#363714003 "Interprets (attribute)"
+* component[consolidationInterpretation].value[x] only CodeableConcept
+* component[consolidationInterpretation].valueCodeableConcept from ConsolidationInterpretationVS (required)
+* component[consolidationInterpretation] ^short = "Consolidation interpretation: inflammation or neoplasm (ADP 1.2.2.1 item 9)"

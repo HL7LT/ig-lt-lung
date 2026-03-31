@@ -30,6 +30,7 @@ Description: "Overall lung LDCT diagnostic report covering the low-dose chest co
     incidentalFinding 0..* and
     mediastinalMass 0..* and
     kidneyLesion 0..* and
+    adrenalLesion 0..* and
     recommendation 0..*
 * result[lungRads] only Reference(LungRadsAssessmentLtLung)
 * result[lungRads] ^short = "LUNG-RADS assessment"
@@ -41,5 +42,7 @@ Description: "Overall lung LDCT diagnostic report covering the low-dose chest co
 * result[mediastinalMass] ^short = "Mediastinal mass"
 * result[kidneyLesion] only Reference(KidneyLesionLtLung)
 * result[kidneyLesion] ^short = "Kidney lesion"
+* result[adrenalLesion] only Reference(AdrenalLesionLtLung)
+* result[adrenalLesion] ^short = "Adrenal gland lesion"
 * result[recommendation] only Reference(LungRecommendationObservationLtLung)
 * result[recommendation] ^short = "Follow-up recommendation"

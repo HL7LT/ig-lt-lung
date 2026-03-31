@@ -11,6 +11,7 @@ Alias: $lung-composition-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinit
 Alias: $incidental-finding-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/incidental-finding-lt-lung
 Alias: $mediastinal-mass-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/mediastinal-mass-lt-lung
 Alias: $kidney-lesion-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/kidney-lesion-lt-lung
+Alias: $adrenal-lesion-lt-lung-url = https://hl7.lt/fhir/lung/StructureDefinition/adrenal-lesion-lt-lung
 
 // === Terminology - CodeSystems ===
 // Terminology URLs omit the IG suffix in the path (shared across IGs)
@@ -40,3 +41,5 @@ Alias: $pulmonary-nodule-type-vs-url = https://tx.hl7.lt/fhir/ValueSet/pulmonary
 Alias: $lung-lobe-vs-url = https://tx.hl7.lt/fhir/ValueSet/lung-lobe
 Alias: $pulmonary-nodule-morphology-vs-url = https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-morphology
 Alias: $incidental-finding-vs-url = https://tx.hl7.lt/fhir/ValueSet/incidental-finding
+Alias: $consolidation-interpretation-vs-url = https://tx.hl7.lt/fhir/ValueSet/consolidation-interpretation
+Alias: $adrenal-laterality-vs-url = https://tx.hl7.lt/fhir/ValueSet/adrenal-laterality

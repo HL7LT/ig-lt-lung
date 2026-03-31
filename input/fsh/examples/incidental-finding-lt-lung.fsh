@@ -56,6 +56,19 @@ Description: "Incidental finding of multiple bilateral mediastinal lymphadenopat
 * component[laterality].valueCodeableConcept = $sct#51440002 "Right and left"
 * component[multiplicity].valueCodeableConcept = $sct#255204007 "Multiple"
 
+Instance: observation-incidental-consolidation-inflammatory-example
+InstanceOf: IncidentalFindingLtLung
+Usage: #example
+Title: "Observation: Lung Consolidation, Likely Inflammatory (example)"
+Description: "Incidental finding of lung consolidation with structured interpretation indicating likely inflammatory origin."
+* status = #final
+* subject = Reference(patient-male-example)
+* effectiveDateTime = "2025-11-20T14:30:00Z"
+* performer = Reference(practitioner-radiologist-example)
+* valueCodeableConcept = $sct#95436008 "Lung consolidation (disorder)"
+* component[consolidationInterpretation].code = $sct#363714003 "Interprets (attribute)"
+* component[consolidationInterpretation].valueCodeableConcept = $sct#257552002 "Inflammation (morphologic abnormality)"
+
 Instance: observation-incidental-mediastinal-mass-example
 InstanceOf: IncidentalFindingLtLung
 Usage: #example

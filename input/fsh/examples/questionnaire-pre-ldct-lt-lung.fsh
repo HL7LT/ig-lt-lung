@@ -77,12 +77,21 @@ Description: "Structured data-capture form for the pre-examination questionnaire
 * item[2].item[0].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#yes "Yes"
 * item[2].item[0].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#no "No"
 
-* item[2].item[1].linkId = "recent-respiratory-infection"
-* item[2].item[1].text = "Acute respiratory infection within 3 months prior to the invitation"
-* item[2].item[1].type = #coding
-* item[2].item[1].required = true
-* item[2].item[1].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#yes "Yes"
-* item[2].item[1].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#no "No"
+* item[2].item[1].linkId = "prior-chest-ct-date"
+* item[2].item[1].text = "Date of previous chest CT examination (if known)"
+* item[2].item[1].type = #date
+* item[2].item[1].required = false
+* item[2].item[1].repeats = true
+* item[2].item[1].enableWhen[0].question = "prior-chest-ct"
+* item[2].item[1].enableWhen[0].operator = #=
+* item[2].item[1].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
+
+* item[2].item[2].linkId = "recent-respiratory-infection"
+* item[2].item[2].text = "Acute respiratory infection within 3 months prior to the invitation"
+* item[2].item[2].type = #coding
+* item[2].item[2].required = true
+* item[2].item[2].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#yes "Yes"
+* item[2].item[2].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#no "No"
 
 // ---------------------------------------------------------------------------
 // Group 4 – Anthropometrics
@@ -261,6 +270,8 @@ Description: "Pre-LDCT screening questionnaire example – active smoker, 30 pac
 * item[2].item[1].linkId = "recent-respiratory-infection"
 * item[2].item[1].text = "Acute respiratory infection within 3 months prior to the invitation"
 * item[2].item[1].answer[0].valueCoding = $lung-questionnaire-options-cs-url#no "No"
+
+// Note: prior-chest-ct-date not included because prior-chest-ct = No
 
 // Group 4 – Anthropometrics
 * item[3].linkId = "grp-anthropometrics"
