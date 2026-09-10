@@ -38,7 +38,7 @@ Description: "Incidental finding of bilateral pleural effusion detected during L
 * effectiveDateTime = "2025-11-20T14:30:00Z"
 * performer = Reference(practitioner-radiologist-example)
 * valueCodeableConcept = $sct#365664001 "Finding of pleural fluid appearance (finding)"
-* component[laterality].code = $sct#272741003 "Laterality (qualifier value)"
+* component[laterality].code = $sct#272741003 "Laterality"
 * component[laterality].valueCodeableConcept = $sct#51440002 "Right and left (qualifier value)"
 * component[severity].valueCodeableConcept = $sct#6736007 "Moderate"
 
@@ -67,7 +67,7 @@ Description: "Incidental finding of lung consolidation with structured interpret
 * performer = Reference(practitioner-radiologist-example)
 * valueCodeableConcept = $sct#95436008 "Lung consolidation (disorder)"
 * component[consolidationInterpretation].code = $sct#363714003 "Interprets (attribute)"
-* component[consolidationInterpretation].valueCodeableConcept = $sct#257552002 "Inflammation (morphologic abnormality)"
+* component[consolidationInterpretation].valueCodeableConcept = $sct#257552002 "Inflammation"
 
 Instance: observation-incidental-mediastinal-mass-example
 InstanceOf: IncidentalFindingLtLung

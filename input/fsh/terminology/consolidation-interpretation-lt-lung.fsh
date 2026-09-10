@@ -6,5 +6,5 @@ Description: "Interpretation subtypes for lung consolidation detected during LDC
 * ^status = #active
 * insert SNOMEDCopyrightForVS
 
-* $sct#257552002 "Inflammation (morphologic abnormality)"
+* $sct#257552002 "Inflammation"
 * $sct#1495041000004108 "Proliferation of neoplasm (morphologic abnormality)"

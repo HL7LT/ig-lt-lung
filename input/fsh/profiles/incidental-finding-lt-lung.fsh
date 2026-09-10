@@ -53,7 +53,7 @@ Description: "Significant incidental finding detected during low-dose chest comp
 * component[severity].valueCodeableConcept from http://hl7.org/fhir/ValueSet/condition-severity (preferred)
 * component[severity] ^short = "Severity: moderate or severe/expressed"
 
-* component[laterality].code = $sct#272741003 "Laterality (qualifier value)"
+* component[laterality].code = $sct#272741003 "Laterality"
 * component[laterality].value[x] only CodeableConcept
 * component[laterality] ^short = "Laterality: right, left, or bilateral"
 
