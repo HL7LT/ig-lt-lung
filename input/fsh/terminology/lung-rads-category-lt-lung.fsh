@@ -12,6 +12,8 @@ to the low-dose chest CT screening examination.
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
+// Required by the ShareableCodeSystem check the publisher applies.
+* ^caseSensitive = true
 * #0  "Category 0 – Incomplete"
 * #1  "Category 1 – Negative"
 * #2  "Category 2 – Benign appearance or behavior"

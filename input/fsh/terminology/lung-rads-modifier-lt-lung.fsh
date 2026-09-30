@@ -12,6 +12,8 @@ contribute to the overall assessment string, for example 0S or 4AS.
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
+// Required by the ShareableCodeSystem check the publisher applies.
+* ^caseSensitive = true
 * #S "Modifier S – Significant incidental finding"
 
 

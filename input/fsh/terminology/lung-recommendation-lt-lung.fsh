@@ -12,6 +12,8 @@ radiological conclusion and programme rules.
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
+// Required by the ShareableCodeSystem check the publisher applies.
+* ^caseSensitive = true
 * #repeat-36m "Repeat LDCT after 36 months"
 * #repeat-1m "Repeat LDCT after 1 month"
 * #insufficient-prior-images "Insufficient data - previous images required for comparison"

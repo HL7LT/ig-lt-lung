@@ -7,7 +7,9 @@ Description: "Overall lung LDCT diagnostic report covering the low-dose chest co
 * ^status = #active
 
 * code.coding contains doc-type 1..1
-* code.coding[doc-type] = $sct#4321000179101 "Computed tomography imaging report (record artifact)"
+// Code corrected: 4321000179101 is "Hematology report" in SNOMED CT,
+// not what the display beside it said. 4261000179100 is the concept meant.
+* code.coding[doc-type] = $sct#4261000179100 "Computed tomography imaging report"
 
 * encounter only Reference(EncounterLt)
 
@@ -15,13 +17,14 @@ Description: "Overall lung LDCT diagnostic report covering the low-dose chest co
 
 // --- Performer: reporting specialist and technologist ---
 * performer 1..*
-* performer only Reference(PractitionerLt or PractitionerRoleLt or OrganizationLt)
+// performer stays as imaging-report-lt types it: a reference to practitioner-role-lt.
+// Widening it back to Practitioner or Organization is not a legal profiling step.
 * performer ^short = "Specialist(s) involved in the LDCT screening (technologist, reporting radiologist)"
 
 // --- Result slicing ---
 * result MS
 * result ^slicing.discriminator.type = #profile
-* result ^slicing.discriminator.path = "$this"
+* result ^slicing.discriminator.path = "resolve()"
 * result ^slicing.ordered = false
 * result ^slicing.rules = #open
 * result contains

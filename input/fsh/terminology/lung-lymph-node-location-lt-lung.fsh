@@ -4,6 +4,8 @@ Title: "Lymph Node Location"
 Description: "Locations of lymphadenopathy detected during LDCT screening."
 * ^url = $lymph-node-location-vs-url
 * ^status = #active
+// Required by the ShareableValueSet check the publisher applies.
+* ^experimental = false
 * insert SNOMEDCopyrightForVS
 
 * $sct#704281009 "Head and neck lymphadenopathy (disorder)"

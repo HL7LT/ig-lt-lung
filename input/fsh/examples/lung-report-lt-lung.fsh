@@ -8,7 +8,9 @@ Usage: #example
 Title: "DiagnosticReport: LDCT Screening Report (example)"
 Description: "LDCT screening report aggregating LUNG-RADS 4A assessment, solid nodule in right upper lobe, moderate coronary calcification, and 3-month follow-up recommendation."
 * status = #final
-* code.coding[doc-type] = $sct#4321000179101 "Computed tomography imaging report (record artifact)"
+// Code corrected: 4321000179101 is "Hematology report" in SNOMED CT,
+// not what the display beside it said. 4261000179100 is the concept meant.
+* code.coding[doc-type] = $sct#4261000179100 "Computed tomography imaging report"
 * code.coding[eu-template] = $Hl7EuDocumentTypes#imaging-report-v0-0-1 "Imaging Report V0.0.1"
 * category[imaging] = $loinc#18748-4 "Diagnostic imaging study"
 * subject = Reference(patient-male-example)

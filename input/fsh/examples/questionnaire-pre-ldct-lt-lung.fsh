@@ -224,7 +224,7 @@ Description: "Structured data-capture form for the pre-examination questionnaire
 * item[6].item[0].answerConstraint = #optionsOrString
 * item[6].item[0].repeats = true
 * item[6].item[0].required = false
-* item[6].item[0].answerValueSet = "http://hl7.org/fhir/sid/icd-10"
+* item[6].item[0].answerValueSet = "http://hl7.org/fhir/ValueSet/icd-10"
 
 // =============================================================================
 // QuestionnaireResponse: Pre-LDCT example
@@ -298,13 +298,13 @@ Description: "Pre-LDCT screening questionnaire example – active smoker, 30 pac
 * item[4].item[1].text = "Cigarettes"
 * item[4].item[1].answer[0].valueCoding = $lung-questionnaire-options-cs-url#yes "Yes"
 
-* item[4].item[1].item[0].linkId = "cigarettes-per-day"
-* item[4].item[1].item[0].text = "Number of cigarettes per day"
-* item[4].item[1].item[0].answer[0].valueInteger = 20
+* item[4].item[1].answer[0].item[0].linkId = "cigarettes-per-day"
+* item[4].item[1].answer[0].item[0].text = "Number of cigarettes per day"
+* item[4].item[1].answer[0].item[0].answer[0].valueInteger = 20
 
-* item[4].item[1].item[1].linkId = "pack-years"
-* item[4].item[1].item[1].text = "Number of pack-years"
-* item[4].item[1].item[1].answer[0].valueInteger = 30
+* item[4].item[1].answer[0].item[1].linkId = "pack-years"
+* item[4].item[1].answer[0].item[1].text = "Number of pack-years"
+* item[4].item[1].answer[0].item[1].answer[0].valueDecimal = 30
 
 * item[4].item[2].linkId = "e-cigarettes"
 * item[4].item[2].text = "Electronic cigarettes"

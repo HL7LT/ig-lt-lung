@@ -209,8 +209,8 @@ Description: "Structured data-capture form for low-dose chest computed tomograph
 * item[2].item[1].item[0].enableWhen[0].question = "emphysema"
 * item[2].item[1].item[0].enableWhen[0].operator = #=
 * item[2].item[1].item[0].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
-* item[2].item[1].item[0].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#moderate "Moderate (25-50%)"
-* item[2].item[1].item[0].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#severe "Severe / expressed (>50%)"
+* item[2].item[1].item[0].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#moderate "Moderate"
+* item[2].item[1].item[0].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#severe "Severe / expressed"
 
 // 3. Bronchiectasis
 * item[2].item[2].linkId = "bronchiectasis"
@@ -226,7 +226,7 @@ Description: "Structured data-capture form for low-dose chest computed tomograph
 * item[2].item[2].item[0].enableWhen[0].operator = #=
 * item[2].item[2].item[0].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 * item[2].item[2].item[0].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#moderate "Moderate"
-* item[2].item[2].item[0].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#severe "Expressed"
+* item[2].item[2].item[0].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#severe "Severe / expressed"
 
 // 4. Pleural fluid
 * item[2].item[3].linkId = "pleural-fluid"
@@ -252,7 +252,7 @@ Description: "Structured data-capture form for low-dose chest computed tomograph
 * item[2].item[3].item[1].enableWhen[0].operator = #=
 * item[2].item[3].item[1].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 * item[2].item[3].item[1].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#small-amount "Small amount"
-* item[2].item[3].item[1].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#moderate "Moderate amount"
+* item[2].item[3].item[1].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#moderate "Moderate"
 * item[2].item[3].item[1].answerOption[2].valueCoding = $lung-questionnaire-options-cs-url#large-amount "Large amount"
 
 // 5. Pleural changes
@@ -511,7 +511,7 @@ Description: "Structured data-capture form for low-dose chest computed tomograph
 * item[3].item[6].item[0].enableWhen[0].operator = #=
 * item[3].item[6].item[0].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
 * item[3].item[6].item[0].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#moderate "Moderate"
-* item[3].item[6].item[0].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#severe "Severe / large"
+* item[3].item[6].item[0].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#severe "Severe / expressed"
 
 // 8. Esophageal changes
 * item[3].item[7].linkId = "esophageal-changes"
@@ -559,8 +559,8 @@ Description: "Structured data-capture form for low-dose chest computed tomograph
 * item[3].item[9].item[0].enableWhen[0].question = "breast-findings"
 * item[3].item[9].item[0].enableWhen[0].operator = #=
 * item[3].item[9].item[0].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
-* item[3].item[9].item[0].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#right "Right breast"
-* item[3].item[9].item[0].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#left "Left breast"
+* item[3].item[9].item[0].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#right "Right"
+* item[3].item[9].item[0].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#left "Left"
 
 // 11. Liver lesions
 * item[3].item[10].linkId = "liver-lesions"
@@ -575,7 +575,7 @@ Description: "Structured data-capture form for low-dose chest computed tomograph
 * item[3].item[10].item[0].enableWhen[0].question = "liver-lesions"
 * item[3].item[10].item[0].enableWhen[0].operator = #=
 * item[3].item[10].item[0].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
-* item[3].item[10].item[0].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#singular "One"
+* item[3].item[10].item[0].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#singular "Singular"
 * item[3].item[10].item[0].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#multiple "Multiple"
 
 * item[3].item[10].item[1].linkId = "liver-texture"
@@ -609,8 +609,8 @@ Description: "Structured data-capture form for low-dose chest computed tomograph
 * item[3].item[11].item[1].enableWhen[0].question = "kidney-lesions"
 * item[3].item[11].item[1].enableWhen[0].operator = #=
 * item[3].item[11].item[1].enableWhen[0].answerCoding = $lung-questionnaire-options-cs-url#yes
-* item[3].item[11].item[1].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#right "Right kidney"
-* item[3].item[11].item[1].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#left "Left kidney"
+* item[3].item[11].item[1].answerOption[0].valueCoding = $lung-questionnaire-options-cs-url#right "Right"
+* item[3].item[11].item[1].answerOption[1].valueCoding = $lung-questionnaire-options-cs-url#left "Left"
 
 * item[3].item[11].item[2].linkId = "kidney-density"
 * item[3].item[11].item[2].text = "Density"
@@ -733,12 +733,12 @@ Description: "Structured data-capture form for low-dose chest computed tomograph
 * item[5].item[2].required = true
 * item[5].item[2].answerOption[0].valueCoding = $lung-recommendation-cs-url#repeat-36m "Repeat LDCT after 36 months"
 * item[5].item[2].answerOption[1].valueCoding = $lung-recommendation-cs-url#repeat-1m "Repeat LDCT after 1 month"
-* item[5].item[2].answerOption[2].valueCoding = $lung-recommendation-cs-url#insufficient-prior-images "Insufficient data - previous images required"
+* item[5].item[2].answerOption[2].valueCoding = $lung-recommendation-cs-url#insufficient-prior-images "Insufficient data - previous images required for comparison"
 * item[5].item[2].answerOption[3].valueCoding = $lung-recommendation-cs-url#followup-12m "Follow-up LDCT after 12 months"
 * item[5].item[2].answerOption[4].valueCoding = $lung-recommendation-cs-url#followup-6m "Follow-up LDCT after 6 months"
 * item[5].item[2].answerOption[5].valueCoding = $lung-recommendation-cs-url#followup-3m "Follow-up LDCT after 3 months"
-* item[5].item[2].answerOption[6].valueCoding = $lung-recommendation-cs-url#pulmonologist-consult "Refer for pulmonologist consultation"
-* item[5].item[2].answerOption[7].valueCoding = $lung-recommendation-cs-url#specialist-consult "Refer for specialist consultation"
+* item[5].item[2].answerOption[6].valueCoding = $lung-recommendation-cs-url#pulmonologist-consult "Refer for pulmonologist consultation in an oncology cluster institution"
+* item[5].item[2].answerOption[7].valueCoding = $lung-recommendation-cs-url#specialist-consult "Refer for consultation to an appropriate specialist"
 
 * item[5].item[3].linkId = "conclusion-notes"
 * item[5].item[3].text = "Conclusion notes"
@@ -810,13 +810,32 @@ Description: "LDCT screening example – solid nodule in right upper lobe, moder
 * item[0].item[2].text = "Dose Length Product – DLP (mGy x cm)"
 * item[0].item[2].answer[0].valueQuantity = 105 'mGy.cm' "mGy.cm"
 
-* item[0].item[3].linkId = "technologist-name"
-* item[0].item[3].text = "Radiology technologist (qualification, name)"
-* item[0].item[3].answer[0].valueString = "Radiology technologist, Jonas Jonaitis"
+// The Questionnaire has no "technologist-name" item: it asks for qualification,
+// first name and last name separately, and all three are required. This response
+// carried the three values concatenated into one string under a linkId that does
+// not exist in the form, so nothing could be traced back to a form item. Split into
+// the linkIds the Questionnaire actually declares; the values are the same words.
+* item[0].item[3].linkId = "technologist-qualification"
+* item[0].item[3].text = "Professional qualification of the technologist"
+* item[0].item[3].answer[0].valueString = "Radiology technologist"
 
-* item[0].item[4].linkId = "facility-name"
-* item[0].item[4].text = "Healthcare institution name and code"
-* item[0].item[4].answer[0].valueString = "Vilniaus universiteto ligonines Santaros klinikos, 111111111"
+* item[0].item[4].linkId = "technologist-first-name"
+* item[0].item[4].text = "Technologist first name"
+* item[0].item[4].answer[0].valueString = "Jonas"
+
+* item[0].item[5].linkId = "technologist-last-name"
+* item[0].item[5].text = "Technologist last name"
+* item[0].item[5].answer[0].valueString = "Jonaitis"
+
+// Same drift, not an error because these two are optional: the form asks for
+// facility-name and facility-code separately.
+* item[0].item[6].linkId = "facility-name"
+* item[0].item[6].text = "Healthcare institution name"
+* item[0].item[6].answer[0].valueString = "Vilniaus universiteto ligonines Santaros klinikos"
+
+* item[0].item[7].linkId = "facility-code"
+* item[0].item[7].text = "Healthcare institution code"
+* item[0].item[7].answer[0].valueString = "111111111"
 
 // Group 2 – Nodule findings
 * item[1].linkId = "grp-nodules"
@@ -870,10 +889,26 @@ Description: "LDCT screening example – solid nodule in right upper lobe, moder
 * item[4].item[0].text = "LUNG-RADS findings category"
 * item[4].item[0].answer[0].valueCoding = $lung-questionnaire-options-cs-url#lung-rads-4a "LUNG-RADS 4A – Detected suspicious formation"
 
-* item[4].item[1].linkId = "conclusion-notes"
-* item[4].item[1].text = "Conclusion notes"
-* item[4].item[1].answer[0].valueString = "Suspicious solid nodule right upper lobe 9mm with spiculated margins. Recommend 3-month follow-up LDCT. Moderate coronary calcification noted."
+// "recommendation" is required and was unanswered. followup-3m is not a choice made
+// here: the conclusion note below already says "Recommend 3-month follow-up LDCT".
+* item[4].item[1].linkId = "recommendation"
+* item[4].item[1].text = "Recommendation"
+* item[4].item[1].answer[0].valueCoding = $lung-recommendation-cs-url#followup-3m "Follow-up LDCT after 3 months"
 
-* item[4].item[2].linkId = "specialist-name"
-* item[4].item[2].text = "Specialist who formulated conclusions (qualification, name)"
-* item[4].item[2].answer[0].valueString = "Radiologist, Petras Gydytojaitis"
+* item[4].item[2].linkId = "conclusion-notes"
+* item[4].item[2].text = "Conclusion notes"
+* item[4].item[2].answer[0].valueString = "Suspicious solid nodule right upper lobe 9mm with spiculated margins. Recommend 3-month follow-up LDCT. Moderate coronary calcification noted."
+
+// As with the technologist above, the form has no "specialist-name" item and
+// requires qualification, first name and last name separately.
+* item[4].item[3].linkId = "specialist-qualification"
+* item[4].item[3].text = "Professional qualification of the specialist"
+* item[4].item[3].answer[0].valueString = "Radiologist"
+
+* item[4].item[4].linkId = "specialist-first-name"
+* item[4].item[4].text = "First name"
+* item[4].item[4].answer[0].valueString = "Petras"
+
+* item[4].item[5].linkId = "specialist-last-name"
+* item[4].item[5].text = "Last name"
+* item[4].item[5].answer[0].valueString = "Gydytojaitis"

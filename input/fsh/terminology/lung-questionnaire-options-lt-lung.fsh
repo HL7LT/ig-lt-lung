@@ -6,6 +6,8 @@ Description: "Illustrative answer option codes for ESPBI questionnaire forms use
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
+// Required by the ShareableCodeSystem check the publisher applies.
+* ^experimental = false
 
 // --- General answers ---
 * #yes "Yes"

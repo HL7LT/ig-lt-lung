@@ -10,6 +10,8 @@ SNOMED CT concepts with local granularity required by the ADP dataset.
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
+// Required by the ShareableCodeSystem check the publisher applies.
+* ^caseSensitive = true
 
 // Interstitial lung change subtypes (ADP 1.2.2.1 item 1)
 * #interstitial-non-subpleural "Interstitial lung changes - non-subpleural"

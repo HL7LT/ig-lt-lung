@@ -25,6 +25,6 @@ Description: "Final LUNG-RADS category 4A assessment with S modifier indicating 
 * effectiveDateTime = "2025-09-22T10:45:00Z"
 * valueCodeableConcept = LungRadsCategory#4A "Category 4A – Suspicious"
 * method.text = "LUNG-RADS v2022"
-* component.code = $sct#246513007 "Revision value"
+* component.code = $sct#246513007 "Revision status"
 * component.valueCodeableConcept = LungRadsModifier#S "Modifier S – Significant incidental finding"
 * note.text = "Suspicious pulmonary lesion detected. Significant incidental extrapulmonary finding also present; overall assessment expressed as 4AS."
