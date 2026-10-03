@@ -20,9 +20,13 @@ Description: "Lung-specific imaging composition extending the base imaging compo
 
 // Findings section — add lung-specific finding slices
 * section[findings].entry ^slicing.discriminator.type = #profile
-* section[findings].entry ^slicing.discriminator.path = "$this"
+* section[findings].entry ^slicing.discriminator.path = "resolve()"
 * section[findings].entry ^slicing.ordered = false
 * section[findings].entry ^slicing.rules = #open
+// The inherited generic slice is prohibited here: ImFinding asserts so little that
+// every instance matches it as well as the specific slice below, and a discriminator
+// must identify exactly one. Slicing is open, so a generic EU entry is still allowed.
+* section[findings].entry[finding] 0..0
 * section[findings].entry contains
     pulmonaryNodule 0..* and
     incidentalFinding 0..* and

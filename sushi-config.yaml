@@ -22,11 +22,11 @@ publisher:
 
 # don't change the order of dependencies!
 dependencies:
-  lt.hl7.fhir.base: current
-  lt.hl7.fhir.lifestyle: current
-  lt.hl7.fhir.vitalsigns: current
-  lt.hl7.fhir.lab: current
-  lt.hl7.fhir.eu: current
+  lt.hl7.fhir.base: 0.4.0
+  lt.hl7.fhir.lifestyle: 0.1.0
+  lt.hl7.fhir.vitalsigns: 0.1.0
+  lt.hl7.fhir.lab: 0.1.0
+  lt.hl7.fhir.eu: 0.0.3
   hl7.fhir.eu.base-r5: 0.1.0
 
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -75,32 +75,33 @@ pages:
 
 
 parameters:
-  special-url-base: https://hl7.lt/fhir
-  special-url: 
+  # Canonicals this guide deliberately hosts outside its own base. See
+  # _audit/fix-special-url.js for why each namespace is re-hosted here.
+  special-url-base:
+    - https://tx.hl7.lt/fhir
+  special-url:
+    - https://tx.hl7.lt/fhir/CodeSystem/lung-questionnaire-options
     - https://tx.hl7.lt/fhir/CodeSystem/lung-rads-category
     - https://tx.hl7.lt/fhir/CodeSystem/lung-rads-modifier
     - https://tx.hl7.lt/fhir/CodeSystem/lung-recommendation
     - https://tx.hl7.lt/fhir/CodeSystem/pulmonary-nodule-type-local
-    - https://tx.hl7.lt/fhir/CodeSystem/pulmonary-nodule-component-code
+    - https://tx.hl7.lt/fhir/CodeSystem/snomed-extension-code
+    - https://tx.hl7.lt/fhir/ValueSet/adrenal-laterality
+    - https://tx.hl7.lt/fhir/ValueSet/consolidation-interpretation
+    - https://tx.hl7.lt/fhir/ValueSet/coronary-calcification-score
+    - https://tx.hl7.lt/fhir/ValueSet/finding-density
+    - https://tx.hl7.lt/fhir/ValueSet/finding-multiplicity
+    - https://tx.hl7.lt/fhir/ValueSet/finding-quantity
+    - https://tx.hl7.lt/fhir/ValueSet/incidental-finding
+    - https://tx.hl7.lt/fhir/ValueSet/kidney-laterality
+    - https://tx.hl7.lt/fhir/ValueSet/kidney-lesion-density
+    - https://tx.hl7.lt/fhir/ValueSet/lung-lobe
     - https://tx.hl7.lt/fhir/ValueSet/lung-rads-category
     - https://tx.hl7.lt/fhir/ValueSet/lung-rads-modifier
     - https://tx.hl7.lt/fhir/ValueSet/lung-recommendation
-    - https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-type
-    - https://tx.hl7.lt/fhir/ValueSet/lung-lobe
-    - https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-morphology
-    - https://tx.hl7.lt/fhir/ValueSet/incidental-finding
-    - https://tx.hl7.lt/fhir/CodeSystem/lung-questionnaire-options
-    - https://tx.hl7.lt/fhir/CodeSystem/snomed-extension-code
-    - https://tx.hl7.lt/fhir/ValueSet/finding-density
-    - https://tx.hl7.lt/fhir/ValueSet/finding-multiplicity
     - https://tx.hl7.lt/fhir/ValueSet/lymph-node-location
-    - https://tx.hl7.lt/fhir/ValueSet/coronary-calcification-score
-    - https://tx.hl7.lt/fhir/ValueSet/interstitial-lung-change
-    - https://tx.hl7.lt/fhir/ValueSet/finding-quantity
-    - https://tx.hl7.lt/fhir/ValueSet/kidney-lesion-density
-    - https://tx.hl7.lt/fhir/ValueSet/kidney-laterality
-    - https://tx.hl7.lt/fhir/ValueSet/consolidation-interpretation
-    - https://tx.hl7.lt/fhir/ValueSet/adrenal-laterality
+    - https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-morphology
+    - https://tx.hl7.lt/fhir/ValueSet/pulmonary-nodule-type
 
   excludettl: true
   shownav: true

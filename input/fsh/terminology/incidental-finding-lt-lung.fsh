@@ -4,6 +4,8 @@ Title: "Incidental Finding"
 Description: "Significant incidental findings in the chest and abdominal areas detected during low-dose chest computed tomography (LDCT) screening."
 * ^url = $incidental-finding-vs-url
 * ^status = #active
+// Required by the ShareableValueSet check the publisher applies.
+* ^experimental = false
 * insert SNOMEDCopyrightForVS
 
 // === 1.2.2.1 Random findings in the lungs ===

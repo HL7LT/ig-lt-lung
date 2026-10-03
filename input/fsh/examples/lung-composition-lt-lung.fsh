@@ -19,6 +19,7 @@ Description: "LDCT screening composition with solid nodule in right upper lobe, 
 * custodian = Reference(Organization/organization-ldct-example)
 * attester[0].mode = http://hl7.org/fhir/composition-attestation-mode#professional "Professional"
 * attester[0].party = Reference(PractitionerRole/practitionerrole-radiologist-example)
+* attester[0].time = "2025-11-04T09:20:00+02:00"
 * extension[diagnosticreport-reference].valueReference = Reference(diagnosticreport-lung-report-example)
 
 // Events
@@ -36,6 +37,8 @@ Description: "LDCT screening composition with solid nodule in right upper lobe, 
 * section[order].code = $loinc#55115-0 "Requested imaging studies information Document"
 * section[order].title = "Order"
 * section[order].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable "Unavailable"
+* section[order].text.status = #generated
+* section[order].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No imaging order was recorded for this examination.</p></div>"
 
 // History section
 * section[history].code = $loinc#11329-0 "History general Narrative - Reported"
@@ -52,6 +55,8 @@ Description: "LDCT screening composition with solid nodule in right upper lobe, 
 * section[comparison].code = $loinc#18834-2 "Radiology Comparison study (narrative)"
 * section[comparison].title = "Comparison"
 * section[comparison].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable "Unavailable"
+* section[comparison].text.status = #generated
+* section[comparison].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No prior imaging study was available for comparison.</p></div>"
 
 // Findings section
 * section[findings].code = $loinc#59776-5 "Findings"
@@ -72,10 +77,13 @@ Description: "LDCT screening composition with solid nodule in right upper lobe, 
 // --- Supporting resources referenced by composition ---
 
 Instance: imagingstudy-ldct-example
-InstanceOf: ImagingStudy
+InstanceOf: ImagingStudyLt
 Usage: #example
 Title: "ImagingStudy: LDCT Screening (example)"
 Description: "Low-dose chest CT imaging study acquired during lung cancer screening."
+// DICOM Study Instance UID, required by ImagingStudyLt.
+* identifier.system = "urn:dicom:uid"
+* identifier.value = "urn:oid:1.2.840.113619.2.55.3.604688654.20251120"
 * status = #available
 * subject = Reference(patient-male-example)
 * started = "2025-11-20T14:30:00Z"

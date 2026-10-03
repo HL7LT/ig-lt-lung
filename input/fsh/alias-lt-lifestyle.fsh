@@ -7,7 +7,6 @@ Alias: $alcohol-use-history-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/Str
 Alias: $audit-c-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/audit-c-lt-lifestyle
 Alias: $family-history-cvd-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/family-history-cvd-lt-lifestyle
 Alias: $family-history-diabetes-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/family-history-diabetes-lt-lifestyle
-Alias: $family-history-fh-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/family-history-fh-lt-lifestyle
 Alias: $family-member-screening-history-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/family-member-screening-history-lt-lifestyle
 Alias: $metabolic-syndrome-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/metabolic-syndrome-lt-lifestyle
 Alias: $nutrition-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/nutrition-lt-lifestyle
@@ -19,7 +18,6 @@ Alias: $tobacco-smoking-consumption-lt-lifestyle-url = https://hl7.lt/fhir/lifes
 Alias: $tobacco-use-duration-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/tobacco-use-duration-lt-lifestyle
 Alias: $tobacco-smoking-stopped-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/tobacco-smoking-stopped-lt-lifestyle
 Alias: $tobacco-type-used-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/tobacco-type-used-lt-lifestyle
-Alias: $cvd-risk-assessment-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/cvd-risk-assessment-lt-lifestyle
 Alias: $diabetes-duration-status-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/diabetes-duration-status-lt-lifestyle
 Alias: $medication-statement-lt-lifestyle-url = https://hl7.lt/fhir/lifestyle/StructureDefinition/medication-statement-lt-lifestyle
 

@@ -4,6 +4,8 @@ Title: "Finding Density"
 Description: "Radiologic density or texture types of a lesion detected during LDCT screening."
 * ^url = $finding-density-vs-url
 * ^status = #active
+// Required by the ShareableValueSet check the publisher applies.
+* ^experimental = false
 * insert SNOMEDCopyrightForVS
 
 * $sct#20476009 "Cystic"

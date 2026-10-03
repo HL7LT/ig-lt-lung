@@ -4,6 +4,8 @@ Title: "Finding Multiplicity"
 Description: "Number of occurrences of a finding: singular or multiple."
 * ^url = $finding-multiplicity-vs-url
 * ^status = #active
+// Required by the ShareableValueSet check the publisher applies.
+* ^experimental = false
 * insert SNOMEDCopyrightForVS
 
 * $sct#50607009 "Singular"

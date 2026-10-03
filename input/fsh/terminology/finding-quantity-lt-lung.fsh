@@ -4,6 +4,8 @@ Title: "Finding Quantity"
 Description: "Amount of a finding: small, medium, or large. Used for pleural fluid, pericardial effusion, and similar quantifiable incidental findings."
 * ^url = $finding-quantity-vs-url
 * ^status = #active
+// Required by the ShareableValueSet check the publisher applies.
+* ^experimental = false
 * insert SNOMEDCopyrightForVS
 
 * $sct#255507004 "Small (qualifier value)"

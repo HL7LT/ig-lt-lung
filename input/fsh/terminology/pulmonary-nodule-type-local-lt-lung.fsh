@@ -10,4 +10,6 @@ in the source dataset.
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
+// Required by the ShareableCodeSystem check the publisher applies.
+* ^caseSensitive = true
 * #part-solid "Part-solid"

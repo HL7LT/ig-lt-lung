@@ -37,7 +37,7 @@ The optional S modifier is represented as a component.
 * method.text ^short = "LUNG-RADS version, e.g. LUNG-RADS v2022"
 * component 0..1
 * component.code 1..1
-* component.code = $sct#246513007 "Revision value"
+* component.code = $sct#246513007 "Revision status"
 * component.value[x] 1..1
 * component.value[x] only CodeableConcept
 * component.valueCodeableConcept from LungRadsModifierVS (required)
